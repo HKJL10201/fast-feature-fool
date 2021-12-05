@@ -1,0 +1,1632 @@
+nohup: ignoring input
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 12:46:18.246395: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 12:46:18.274886: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 12:46:18.276549: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5645859676c0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 12:46:18.276602: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 12:46:18.278056: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 12:46:18.287569: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 12:46:18.287615: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 12:46:18.287628: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 12:46:18.287757: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 12:46:18.287792: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 12:46:18.287804: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+weights/vgg_f.npy
+iter:  1000	top-1: 0.10	fooling-rate: 81.40
+iter:  2000	top-1: 0.10	fooling-rate: 82.10
+iter:  3000	top-1: 0.13	fooling-rate: 82.17
+iter:  4000	top-1: 0.10	fooling-rate: 82.20
+iter:  5000	top-1: 0.10	fooling-rate: 82.18
+iter:  6000	top-1: 0.08	fooling-rate: 81.62
+iter:  7000	top-1: 0.11	fooling-rate: 81.73
+iter:  8000	top-1: 0.10	fooling-rate: 81.42
+iter:  9000	top-1: 0.09	fooling-rate: 81.56
+iter: 10000	top-1: 0.10	fooling-rate: 81.72
+iter: 11000	top-1: 0.10	fooling-rate: 81.81
+iter: 12000	top-1: 0.09	fooling-rate: 81.74
+iter: 13000	top-1: 0.08	fooling-rate: 81.87
+iter: 14000	top-1: 0.08	fooling-rate: 81.98
+iter: 15000	top-1: 0.07	fooling-rate: 82.00
+iter: 16000	top-1: 0.08	fooling-rate: 82.06
+iter: 17000	top-1: 0.08	fooling-rate: 81.99
+iter: 18000	top-1: 0.09	fooling-rate: 81.95
+iter: 19000	top-1: 0.09	fooling-rate: 81.99
+iter: 20000	top-1: 0.10	fooling-rate: 81.99
+iter: 21000	top-1: 0.09	fooling-rate: 81.97
+iter: 22000	top-1: 0.09	fooling-rate: 82.04
+iter: 23000	top-1: 0.10	fooling-rate: 82.12
+iter: 24000	top-1: 0.09	fooling-rate: 82.10
+iter: 25000	top-1: 0.09	fooling-rate: 82.06
+iter: 26000	top-1: 0.08	fooling-rate: 82.03
+iter: 27000	top-1: 0.09	fooling-rate: 82.05
+iter: 28000	top-1: 0.09	fooling-rate: 82.07
+iter: 29000	top-1: 0.09	fooling-rate: 82.09
+iter: 30000	top-1: 0.09	fooling-rate: 82.09
+iter: 31000	top-1: 0.09	fooling-rate: 82.10
+iter: 32000	top-1: 0.09	fooling-rate: 82.05
+iter: 33000	top-1: 0.09	fooling-rate: 82.08
+iter: 34000	top-1: 0.09	fooling-rate: 82.06
+iter: 35000	top-1: 0.09	fooling-rate: 82.06
+iter: 36000	top-1: 0.09	fooling-rate: 82.01
+iter: 37000	top-1: 0.09	fooling-rate: 82.02
+iter: 38000	top-1: 0.09	fooling-rate: 82.07
+iter: 39000	top-1: 0.09	fooling-rate: 82.04
+iter: 40000	top-1: 0.10	fooling-rate: 82.01
+iter: 41000	top-1: 0.10	fooling-rate: 82.04
+iter: 42000	top-1: 0.10	fooling-rate: 82.00
+iter: 43000	top-1: 0.10	fooling-rate: 82.02
+iter: 44000	top-1: 0.10	fooling-rate: 81.97
+iter: 45000	top-1: 0.10	fooling-rate: 81.99
+iter: 46000	top-1: 0.10	fooling-rate: 81.98
+iter: 47000	top-1: 0.10	fooling-rate: 81.96
+iter: 48000	top-1: 0.10	fooling-rate: 81.94
+iter: 49000	top-1: 0.10	fooling-rate: 81.98
+Top-1 Accuracy = 0.10
+Fooling Rate = 82.02
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 13:22:28.721356: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 13:22:28.758813: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 13:22:28.761944: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5653403f9760 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 13:22:28.762019: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 13:22:28.763957: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 13:22:28.775549: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 13:22:28.775601: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 13:22:28.775610: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 13:22:28.775748: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 13:22:28.775774: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 13:22:28.775782: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 48.70
+iter:  2000	top-1: 0.05	fooling-rate: 47.80
+iter:  3000	top-1: 0.07	fooling-rate: 48.47
+iter:  4000	top-1: 0.05	fooling-rate: 48.45
+iter:  5000	top-1: 0.04	fooling-rate: 49.26
+iter:  6000	top-1: 0.07	fooling-rate: 49.50
+iter:  7000	top-1: 0.10	fooling-rate: 49.87
+iter:  8000	top-1: 0.09	fooling-rate: 49.50
+iter:  9000	top-1: 0.09	fooling-rate: 49.58
+iter: 10000	top-1: 0.08	fooling-rate: 49.52
+iter: 11000	top-1: 0.08	fooling-rate: 49.74
+iter: 12000	top-1: 0.07	fooling-rate: 49.70
+iter: 13000	top-1: 0.08	fooling-rate: 49.66
+iter: 14000	top-1: 0.07	fooling-rate: 49.71
+iter: 15000	top-1: 0.07	fooling-rate: 49.68
+iter: 16000	top-1: 0.08	fooling-rate: 49.67
+iter: 17000	top-1: 0.08	fooling-rate: 49.47
+iter: 18000	top-1: 0.08	fooling-rate: 49.39
+iter: 19000	top-1: 0.08	fooling-rate: 49.40
+iter: 20000	top-1: 0.08	fooling-rate: 49.45
+iter: 21000	top-1: 0.08	fooling-rate: 49.35
+iter: 22000	top-1: 0.07	fooling-rate: 49.34
+iter: 23000	top-1: 0.07	fooling-rate: 49.46
+iter: 24000	top-1: 0.07	fooling-rate: 49.45
+iter: 25000	top-1: 0.07	fooling-rate: 49.44
+iter: 26000	top-1: 0.07	fooling-rate: 49.52
+iter: 27000	top-1: 0.07	fooling-rate: 49.45
+iter: 28000	top-1: 0.07	fooling-rate: 49.54
+iter: 29000	top-1: 0.07	fooling-rate: 49.59
+iter: 30000	top-1: 0.07	fooling-rate: 49.58
+iter: 31000	top-1: 0.07	fooling-rate: 49.55
+iter: 32000	top-1: 0.07	fooling-rate: 49.40
+iter: 33000	top-1: 0.07	fooling-rate: 49.41
+iter: 34000	top-1: 0.07	fooling-rate: 49.36
+iter: 35000	top-1: 0.07	fooling-rate: 49.36
+iter: 36000	top-1: 0.07	fooling-rate: 49.41
+iter: 37000	top-1: 0.07	fooling-rate: 49.41
+iter: 38000	top-1: 0.07	fooling-rate: 49.39
+iter: 39000	top-1: 0.07	fooling-rate: 49.41
+iter: 40000	top-1: 0.07	fooling-rate: 49.44
+iter: 41000	top-1: 0.07	fooling-rate: 49.49
+iter: 42000	top-1: 0.07	fooling-rate: 49.43
+iter: 43000	top-1: 0.07	fooling-rate: 49.45
+iter: 44000	top-1: 0.08	fooling-rate: 49.42
+iter: 45000	top-1: 0.08	fooling-rate: 49.42
+iter: 46000	top-1: 0.08	fooling-rate: 49.40
+iter: 47000	top-1: 0.08	fooling-rate: 49.41
+iter: 48000	top-1: 0.08	fooling-rate: 49.29
+iter: 49000	top-1: 0.08	fooling-rate: 49.35
+Top-1 Accuracy = 0.08
+Fooling Rate = 49.33
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/googlenet.py:38: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 14:03:47.883691: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 14:03:47.891807: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 14:03:47.893038: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559ef56d0a50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 14:03:47.893073: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 14:03:47.894149: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 14:03:47.905214: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 14:03:47.905249: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 14:03:47.905265: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 14:03:47.905371: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 14:03:47.905391: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 14:03:47.905398: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 38.80
+iter:  2000	top-1: 0.05	fooling-rate: 37.70
+iter:  3000	top-1: 0.07	fooling-rate: 38.27
+iter:  4000	top-1: 0.05	fooling-rate: 38.60
+iter:  5000	top-1: 0.04	fooling-rate: 39.06
+iter:  6000	top-1: 0.05	fooling-rate: 39.13
+iter:  7000	top-1: 0.09	fooling-rate: 39.37
+iter:  8000	top-1: 0.07	fooling-rate: 39.44
+iter:  9000	top-1: 0.07	fooling-rate: 39.72
+iter: 10000	top-1: 0.07	fooling-rate: 39.94
+iter: 11000	top-1: 0.08	fooling-rate: 39.89
+iter: 12000	top-1: 0.07	fooling-rate: 40.02
+iter: 13000	top-1: 0.07	fooling-rate: 40.04
+iter: 14000	top-1: 0.06	fooling-rate: 40.21
+iter: 15000	top-1: 0.07	fooling-rate: 40.32
+iter: 16000	top-1: 0.07	fooling-rate: 40.44
+iter: 17000	top-1: 0.08	fooling-rate: 40.38
+iter: 18000	top-1: 0.09	fooling-rate: 40.27
+iter: 19000	top-1: 0.09	fooling-rate: 40.32
+iter: 20000	top-1: 0.09	fooling-rate: 40.33
+iter: 21000	top-1: 0.09	fooling-rate: 40.46
+iter: 22000	top-1: 0.08	fooling-rate: 40.36
+iter: 23000	top-1: 0.09	fooling-rate: 40.35
+iter: 24000	top-1: 0.08	fooling-rate: 40.40
+iter: 25000	top-1: 0.08	fooling-rate: 40.36
+iter: 26000	top-1: 0.09	fooling-rate: 40.38
+iter: 27000	top-1: 0.09	fooling-rate: 40.44
+iter: 28000	top-1: 0.09	fooling-rate: 40.39
+iter: 29000	top-1: 0.09	fooling-rate: 40.38
+iter: 30000	top-1: 0.08	fooling-rate: 40.40
+iter: 31000	top-1: 0.08	fooling-rate: 40.37
+iter: 32000	top-1: 0.08	fooling-rate: 40.29
+iter: 33000	top-1: 0.08	fooling-rate: 40.36
+iter: 34000	top-1: 0.08	fooling-rate: 40.37
+iter: 35000	top-1: 0.08	fooling-rate: 40.34
+iter: 36000	top-1: 0.08	fooling-rate: 40.37
+iter: 37000	top-1: 0.08	fooling-rate: 40.33
+iter: 38000	top-1: 0.08	fooling-rate: 40.31
+iter: 39000	top-1: 0.08	fooling-rate: 40.27
+iter: 40000	top-1: 0.08	fooling-rate: 40.27
+iter: 41000	top-1: 0.08	fooling-rate: 40.25
+iter: 42000	top-1: 0.08	fooling-rate: 40.22
+iter: 43000	top-1: 0.08	fooling-rate: 40.24
+iter: 44000	top-1: 0.09	fooling-rate: 40.19
+iter: 45000	top-1: 0.09	fooling-rate: 40.15
+iter: 46000	top-1: 0.08	fooling-rate: 40.13
+iter: 47000	top-1: 0.09	fooling-rate: 40.16
+iter: 48000	top-1: 0.08	fooling-rate: 40.15
+iter: 49000	top-1: 0.08	fooling-rate: 40.16
+Top-1 Accuracy = 0.09
+Fooling Rate = 40.16
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_16.py:43: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 14:46:41.842830: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 14:46:41.870861: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 14:46:41.872523: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55cf17049f50 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 14:46:41.872581: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 14:46:41.874055: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 14:46:41.883531: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 14:46:41.883582: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 14:46:41.883596: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 14:46:41.883743: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 14:46:41.883779: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 14:46:41.883792: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 39.00
+iter:  2000	top-1: 0.10	fooling-rate: 38.40
+iter:  3000	top-1: 0.10	fooling-rate: 39.47
+iter:  4000	top-1: 0.07	fooling-rate: 39.60
+iter:  5000	top-1: 0.06	fooling-rate: 40.10
+iter:  6000	top-1: 0.08	fooling-rate: 40.40
+iter:  7000	top-1: 0.13	fooling-rate: 40.21
+iter:  8000	top-1: 0.11	fooling-rate: 40.02
+iter:  9000	top-1: 0.10	fooling-rate: 39.94
+iter: 10000	top-1: 0.10	fooling-rate: 39.89
+iter: 11000	top-1: 0.10	fooling-rate: 40.18
+iter: 12000	top-1: 0.09	fooling-rate: 40.29
+iter: 13000	top-1: 0.08	fooling-rate: 40.37
+iter: 14000	top-1: 0.08	fooling-rate: 40.56
+iter: 15000	top-1: 0.08	fooling-rate: 40.52
+iter: 16000	top-1: 0.09	fooling-rate: 40.63
+iter: 17000	top-1: 0.09	fooling-rate: 40.41
+iter: 18000	top-1: 0.09	fooling-rate: 40.36
+iter: 19000	top-1: 0.09	fooling-rate: 40.32
+iter: 20000	top-1: 0.10	fooling-rate: 40.43
+iter: 21000	top-1: 0.10	fooling-rate: 40.42
+iter: 22000	top-1: 0.10	fooling-rate: 40.41
+iter: 23000	top-1: 0.10	fooling-rate: 40.40
+iter: 24000	top-1: 0.10	fooling-rate: 40.46
+iter: 25000	top-1: 0.10	fooling-rate: 40.45
+iter: 26000	top-1: 0.10	fooling-rate: 40.45
+iter: 27000	top-1: 0.10	fooling-rate: 40.48
+iter: 28000	top-1: 0.09	fooling-rate: 40.61
+iter: 29000	top-1: 0.10	fooling-rate: 40.66
+iter: 30000	top-1: 0.09	fooling-rate: 40.69
+iter: 31000	top-1: 0.09	fooling-rate: 40.69
+iter: 32000	top-1: 0.09	fooling-rate: 40.58
+iter: 33000	top-1: 0.09	fooling-rate: 40.70
+iter: 34000	top-1: 0.09	fooling-rate: 40.70
+iter: 35000	top-1: 0.09	fooling-rate: 40.76
+iter: 36000	top-1: 0.09	fooling-rate: 40.75
+iter: 37000	top-1: 0.09	fooling-rate: 40.75
+iter: 38000	top-1: 0.10	fooling-rate: 40.74
+iter: 39000	top-1: 0.09	fooling-rate: 40.68
+iter: 40000	top-1: 0.10	fooling-rate: 40.63
+iter: 41000	top-1: 0.10	fooling-rate: 40.62
+iter: 42000	top-1: 0.10	fooling-rate: 40.61
+iter: 43000	top-1: 0.10	fooling-rate: 40.63
+iter: 44000	top-1: 0.10	fooling-rate: 40.63
+iter: 45000	top-1: 0.10	fooling-rate: 40.60
+iter: 46000	top-1: 0.10	fooling-rate: 40.63
+iter: 47000	top-1: 0.10	fooling-rate: 40.63
+iter: 48000	top-1: 0.10	fooling-rate: 40.57
+iter: 49000	top-1: 0.10	fooling-rate: 40.59
+Top-1 Accuracy = 0.10
+Fooling Rate = 40.59
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 16:10:25.335407: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 16:10:25.366806: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 16:10:25.368492: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x559d57bff9e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 16:10:25.368539: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 16:10:25.370005: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 16:10:25.379555: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 16:10:25.379606: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 16:10:25.379619: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 16:10:25.379762: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 16:10:25.379797: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 16:10:25.379810: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 38.70
+iter:  2000	top-1: 0.10	fooling-rate: 38.05
+iter:  3000	top-1: 0.07	fooling-rate: 38.67
+iter:  4000	top-1: 0.05	fooling-rate: 38.88
+iter:  5000	top-1: 0.04	fooling-rate: 39.18
+iter:  6000	top-1: 0.05	fooling-rate: 39.43
+iter:  7000	top-1: 0.09	fooling-rate: 39.53
+iter:  8000	top-1: 0.07	fooling-rate: 39.45
+iter:  9000	top-1: 0.07	fooling-rate: 39.42
+iter: 10000	top-1: 0.08	fooling-rate: 39.39
+iter: 11000	top-1: 0.08	fooling-rate: 39.34
+iter: 12000	top-1: 0.07	fooling-rate: 39.48
+iter: 13000	top-1: 0.07	fooling-rate: 39.75
+iter: 14000	top-1: 0.06	fooling-rate: 40.07
+iter: 15000	top-1: 0.07	fooling-rate: 40.14
+iter: 16000	top-1: 0.07	fooling-rate: 40.12
+iter: 17000	top-1: 0.08	fooling-rate: 40.02
+iter: 18000	top-1: 0.09	fooling-rate: 40.12
+iter: 19000	top-1: 0.09	fooling-rate: 40.04
+iter: 20000	top-1: 0.10	fooling-rate: 40.14
+iter: 21000	top-1: 0.10	fooling-rate: 40.11
+iter: 22000	top-1: 0.10	fooling-rate: 40.05
+iter: 23000	top-1: 0.10	fooling-rate: 40.13
+iter: 24000	top-1: 0.10	fooling-rate: 40.16
+iter: 25000	top-1: 0.10	fooling-rate: 40.24
+iter: 26000	top-1: 0.10	fooling-rate: 40.27
+iter: 27000	top-1: 0.10	fooling-rate: 40.31
+iter: 28000	top-1: 0.10	fooling-rate: 40.37
+iter: 29000	top-1: 0.10	fooling-rate: 40.39
+iter: 30000	top-1: 0.10	fooling-rate: 40.46
+iter: 31000	top-1: 0.09	fooling-rate: 40.51
+iter: 32000	top-1: 0.09	fooling-rate: 40.35
+iter: 33000	top-1: 0.09	fooling-rate: 40.44
+iter: 34000	top-1: 0.09	fooling-rate: 40.45
+iter: 35000	top-1: 0.09	fooling-rate: 40.49
+iter: 36000	top-1: 0.09	fooling-rate: 40.47
+iter: 37000	top-1: 0.09	fooling-rate: 40.41
+iter: 38000	top-1: 0.09	fooling-rate: 40.40
+iter: 39000	top-1: 0.09	fooling-rate: 40.37
+iter: 40000	top-1: 0.10	fooling-rate: 40.39
+iter: 41000	top-1: 0.10	fooling-rate: 40.38
+iter: 42000	top-1: 0.10	fooling-rate: 40.35
+iter: 43000	top-1: 0.10	fooling-rate: 40.38
+iter: 44000	top-1: 0.10	fooling-rate: 40.35
+iter: 45000	top-1: 0.10	fooling-rate: 40.33
+iter: 46000	top-1: 0.10	fooling-rate: 40.33
+iter: 47000	top-1: 0.10	fooling-rate: 40.32
+iter: 48000	top-1: 0.10	fooling-rate: 40.30
+iter: 49000	top-1: 0.10	fooling-rate: 40.28
+Top-1 Accuracy = 0.10
+Fooling Rate = 40.27
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 17:44:24.587364: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 17:44:24.618879: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 17:44:24.620493: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x565453f4eaa0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 17:44:24.620541: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 17:44:24.621901: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 17:44:24.631339: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 17:44:24.631389: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 17:44:24.631402: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 17:44:24.631544: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 17:44:24.631578: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 17:44:24.631590: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+weights/vgg_f.npy
+iter:  1000	top-1: 0.10	fooling-rate: 55.40
+iter:  2000	top-1: 0.10	fooling-rate: 53.25
+iter:  3000	top-1: 0.13	fooling-rate: 54.30
+iter:  4000	top-1: 0.10	fooling-rate: 55.20
+iter:  5000	top-1: 0.10	fooling-rate: 55.70
+iter:  6000	top-1: 0.08	fooling-rate: 55.45
+iter:  7000	top-1: 0.11	fooling-rate: 55.87
+iter:  8000	top-1: 0.10	fooling-rate: 56.03
+iter:  9000	top-1: 0.09	fooling-rate: 56.28
+iter: 10000	top-1: 0.10	fooling-rate: 56.26
+iter: 11000	top-1: 0.10	fooling-rate: 56.47
+iter: 12000	top-1: 0.09	fooling-rate: 56.47
+iter: 13000	top-1: 0.08	fooling-rate: 56.49
+iter: 14000	top-1: 0.08	fooling-rate: 56.61
+iter: 15000	top-1: 0.07	fooling-rate: 56.62
+iter: 16000	top-1: 0.08	fooling-rate: 56.67
+iter: 17000	top-1: 0.08	fooling-rate: 56.58
+iter: 18000	top-1: 0.09	fooling-rate: 56.59
+iter: 19000	top-1: 0.09	fooling-rate: 56.56
+iter: 20000	top-1: 0.10	fooling-rate: 56.57
+iter: 21000	top-1: 0.09	fooling-rate: 56.49
+iter: 22000	top-1: 0.09	fooling-rate: 56.54
+iter: 23000	top-1: 0.10	fooling-rate: 56.71
+iter: 24000	top-1: 0.09	fooling-rate: 56.80
+iter: 25000	top-1: 0.09	fooling-rate: 56.81
+iter: 26000	top-1: 0.08	fooling-rate: 56.85
+iter: 27000	top-1: 0.09	fooling-rate: 56.79
+iter: 28000	top-1: 0.09	fooling-rate: 56.78
+iter: 29000	top-1: 0.09	fooling-rate: 56.76
+iter: 30000	top-1: 0.09	fooling-rate: 56.71
+iter: 31000	top-1: 0.09	fooling-rate: 56.73
+iter: 32000	top-1: 0.09	fooling-rate: 56.63
+iter: 33000	top-1: 0.09	fooling-rate: 56.66
+iter: 34000	top-1: 0.09	fooling-rate: 56.67
+iter: 35000	top-1: 0.09	fooling-rate: 56.63
+iter: 36000	top-1: 0.09	fooling-rate: 56.56
+iter: 37000	top-1: 0.09	fooling-rate: 56.59
+iter: 38000	top-1: 0.09	fooling-rate: 56.61
+iter: 39000	top-1: 0.09	fooling-rate: 56.59
+iter: 40000	top-1: 0.10	fooling-rate: 56.62
+iter: 41000	top-1: 0.10	fooling-rate: 56.66
+iter: 42000	top-1: 0.10	fooling-rate: 56.65
+iter: 43000	top-1: 0.10	fooling-rate: 56.60
+iter: 44000	top-1: 0.10	fooling-rate: 56.53
+iter: 45000	top-1: 0.10	fooling-rate: 56.57
+iter: 46000	top-1: 0.10	fooling-rate: 56.57
+iter: 47000	top-1: 0.10	fooling-rate: 56.60
+iter: 48000	top-1: 0.10	fooling-rate: 56.55
+iter: 49000	top-1: 0.10	fooling-rate: 56.57
+Top-1 Accuracy = 0.10
+Fooling Rate = 56.57
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 18:18:38.215258: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 18:18:38.246745: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 18:18:38.248222: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55672ad08f70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 18:18:38.248274: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 18:18:38.249729: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 18:18:38.259346: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 18:18:38.259407: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 18:18:38.259420: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 18:18:38.259552: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 18:18:38.259586: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 18:18:38.259598: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 81.90
+iter:  2000	top-1: 0.05	fooling-rate: 82.00
+iter:  3000	top-1: 0.07	fooling-rate: 82.40
+iter:  4000	top-1: 0.05	fooling-rate: 82.27
+iter:  5000	top-1: 0.04	fooling-rate: 82.52
+iter:  6000	top-1: 0.07	fooling-rate: 82.52
+iter:  7000	top-1: 0.10	fooling-rate: 82.67
+iter:  8000	top-1: 0.09	fooling-rate: 82.38
+iter:  9000	top-1: 0.09	fooling-rate: 82.41
+iter: 10000	top-1: 0.08	fooling-rate: 82.58
+iter: 11000	top-1: 0.08	fooling-rate: 82.80
+iter: 12000	top-1: 0.07	fooling-rate: 82.74
+iter: 13000	top-1: 0.08	fooling-rate: 82.78
+iter: 14000	top-1: 0.07	fooling-rate: 82.73
+iter: 15000	top-1: 0.07	fooling-rate: 82.73
+iter: 16000	top-1: 0.08	fooling-rate: 82.88
+iter: 17000	top-1: 0.08	fooling-rate: 82.74
+iter: 18000	top-1: 0.08	fooling-rate: 82.68
+iter: 19000	top-1: 0.08	fooling-rate: 82.68
+iter: 20000	top-1: 0.08	fooling-rate: 82.64
+iter: 21000	top-1: 0.08	fooling-rate: 82.62
+iter: 22000	top-1: 0.07	fooling-rate: 82.58
+iter: 23000	top-1: 0.07	fooling-rate: 82.67
+iter: 24000	top-1: 0.07	fooling-rate: 82.73
+iter: 25000	top-1: 0.07	fooling-rate: 82.76
+iter: 26000	top-1: 0.07	fooling-rate: 82.75
+iter: 27000	top-1: 0.07	fooling-rate: 82.77
+iter: 28000	top-1: 0.07	fooling-rate: 82.78
+iter: 29000	top-1: 0.07	fooling-rate: 82.82
+iter: 30000	top-1: 0.07	fooling-rate: 82.85
+iter: 31000	top-1: 0.07	fooling-rate: 82.81
+iter: 32000	top-1: 0.07	fooling-rate: 82.80
+iter: 33000	top-1: 0.07	fooling-rate: 82.78
+iter: 34000	top-1: 0.07	fooling-rate: 82.76
+iter: 35000	top-1: 0.07	fooling-rate: 82.74
+iter: 36000	top-1: 0.07	fooling-rate: 82.73
+iter: 37000	top-1: 0.07	fooling-rate: 82.70
+iter: 38000	top-1: 0.07	fooling-rate: 82.67
+iter: 39000	top-1: 0.07	fooling-rate: 82.68
+iter: 40000	top-1: 0.07	fooling-rate: 82.65
+iter: 41000	top-1: 0.07	fooling-rate: 82.69
+iter: 42000	top-1: 0.07	fooling-rate: 82.66
+iter: 43000	top-1: 0.07	fooling-rate: 82.63
+iter: 44000	top-1: 0.08	fooling-rate: 82.60
+iter: 45000	top-1: 0.08	fooling-rate: 82.64
+iter: 46000	top-1: 0.08	fooling-rate: 82.64
+iter: 47000	top-1: 0.08	fooling-rate: 82.63
+iter: 48000	top-1: 0.08	fooling-rate: 82.59
+iter: 49000	top-1: 0.08	fooling-rate: 82.62
+Top-1 Accuracy = 0.08
+Fooling Rate = 82.67
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/googlenet.py:38: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 18:54:32.907852: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 18:54:32.919494: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 18:54:32.921213: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55866e3789b0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 18:54:32.921265: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 18:54:32.922765: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 18:54:32.931881: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 18:54:32.931917: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 18:54:32.931926: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 18:54:32.932047: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 18:54:32.932070: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 18:54:32.932078: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 39.80
+iter:  2000	top-1: 0.05	fooling-rate: 39.20
+iter:  3000	top-1: 0.07	fooling-rate: 40.07
+iter:  4000	top-1: 0.05	fooling-rate: 40.45
+iter:  5000	top-1: 0.04	fooling-rate: 40.98
+iter:  6000	top-1: 0.05	fooling-rate: 41.17
+iter:  7000	top-1: 0.09	fooling-rate: 41.16
+iter:  8000	top-1: 0.07	fooling-rate: 41.10
+iter:  9000	top-1: 0.07	fooling-rate: 41.09
+iter: 10000	top-1: 0.07	fooling-rate: 41.26
+iter: 11000	top-1: 0.08	fooling-rate: 41.35
+iter: 12000	top-1: 0.07	fooling-rate: 41.48
+iter: 13000	top-1: 0.07	fooling-rate: 41.47
+iter: 14000	top-1: 0.06	fooling-rate: 41.62
+iter: 15000	top-1: 0.07	fooling-rate: 41.73
+iter: 16000	top-1: 0.07	fooling-rate: 41.82
+iter: 17000	top-1: 0.08	fooling-rate: 41.75
+iter: 18000	top-1: 0.09	fooling-rate: 41.67
+iter: 19000	top-1: 0.09	fooling-rate: 41.65
+iter: 20000	top-1: 0.09	fooling-rate: 41.73
+iter: 21000	top-1: 0.09	fooling-rate: 41.89
+iter: 22000	top-1: 0.08	fooling-rate: 41.83
+iter: 23000	top-1: 0.09	fooling-rate: 41.82
+iter: 24000	top-1: 0.08	fooling-rate: 41.77
+iter: 25000	top-1: 0.08	fooling-rate: 41.68
+iter: 26000	top-1: 0.09	fooling-rate: 41.71
+iter: 27000	top-1: 0.09	fooling-rate: 41.74
+iter: 28000	top-1: 0.09	fooling-rate: 41.77
+iter: 29000	top-1: 0.09	fooling-rate: 41.73
+iter: 30000	top-1: 0.08	fooling-rate: 41.75
+iter: 31000	top-1: 0.08	fooling-rate: 41.81
+iter: 32000	top-1: 0.08	fooling-rate: 41.66
+iter: 33000	top-1: 0.08	fooling-rate: 41.72
+iter: 34000	top-1: 0.08	fooling-rate: 41.71
+iter: 35000	top-1: 0.08	fooling-rate: 41.65
+iter: 36000	top-1: 0.08	fooling-rate: 41.69
+iter: 37000	top-1: 0.08	fooling-rate: 41.62
+iter: 38000	top-1: 0.08	fooling-rate: 41.58
+iter: 39000	top-1: 0.08	fooling-rate: 41.53
+iter: 40000	top-1: 0.08	fooling-rate: 41.50
+iter: 41000	top-1: 0.08	fooling-rate: 41.48
+iter: 42000	top-1: 0.08	fooling-rate: 41.41
+iter: 43000	top-1: 0.08	fooling-rate: 41.44
+iter: 44000	top-1: 0.09	fooling-rate: 41.48
+iter: 45000	top-1: 0.09	fooling-rate: 41.45
+iter: 46000	top-1: 0.08	fooling-rate: 41.45
+iter: 47000	top-1: 0.09	fooling-rate: 41.45
+iter: 48000	top-1: 0.08	fooling-rate: 41.40
+iter: 49000	top-1: 0.08	fooling-rate: 41.43
+Top-1 Accuracy = 0.09
+Fooling Rate = 41.45
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_16.py:43: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 19:37:12.120336: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 19:37:12.150842: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 19:37:12.152524: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5616d1248220 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 19:37:12.152577: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 19:37:12.154034: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 19:37:12.163505: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 19:37:12.163552: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 19:37:12.163565: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 19:37:12.163701: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 19:37:12.163735: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 19:37:12.163747: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 36.80
+iter:  2000	top-1: 0.10	fooling-rate: 37.20
+iter:  3000	top-1: 0.10	fooling-rate: 37.47
+iter:  4000	top-1: 0.07	fooling-rate: 37.33
+iter:  5000	top-1: 0.06	fooling-rate: 37.48
+iter:  6000	top-1: 0.08	fooling-rate: 37.80
+iter:  7000	top-1: 0.13	fooling-rate: 37.56
+iter:  8000	top-1: 0.11	fooling-rate: 37.25
+iter:  9000	top-1: 0.10	fooling-rate: 37.40
+iter: 10000	top-1: 0.10	fooling-rate: 37.35
+iter: 11000	top-1: 0.10	fooling-rate: 37.69
+iter: 12000	top-1: 0.09	fooling-rate: 37.92
+iter: 13000	top-1: 0.08	fooling-rate: 37.97
+iter: 14000	top-1: 0.08	fooling-rate: 38.12
+iter: 15000	top-1: 0.08	fooling-rate: 38.03
+iter: 16000	top-1: 0.09	fooling-rate: 38.06
+iter: 17000	top-1: 0.09	fooling-rate: 37.93
+iter: 18000	top-1: 0.09	fooling-rate: 37.83
+iter: 19000	top-1: 0.09	fooling-rate: 37.77
+iter: 20000	top-1: 0.10	fooling-rate: 37.88
+iter: 21000	top-1: 0.10	fooling-rate: 37.81
+iter: 22000	top-1: 0.10	fooling-rate: 37.77
+iter: 23000	top-1: 0.10	fooling-rate: 37.77
+iter: 24000	top-1: 0.10	fooling-rate: 37.84
+iter: 25000	top-1: 0.10	fooling-rate: 37.90
+iter: 26000	top-1: 0.10	fooling-rate: 37.95
+iter: 27000	top-1: 0.10	fooling-rate: 38.03
+iter: 28000	top-1: 0.09	fooling-rate: 38.14
+iter: 29000	top-1: 0.10	fooling-rate: 38.11
+iter: 30000	top-1: 0.09	fooling-rate: 38.14
+iter: 31000	top-1: 0.09	fooling-rate: 38.20
+iter: 32000	top-1: 0.09	fooling-rate: 38.17
+iter: 33000	top-1: 0.09	fooling-rate: 38.26
+iter: 34000	top-1: 0.09	fooling-rate: 38.26
+iter: 35000	top-1: 0.09	fooling-rate: 38.25
+iter: 36000	top-1: 0.09	fooling-rate: 38.27
+iter: 37000	top-1: 0.09	fooling-rate: 38.26
+iter: 38000	top-1: 0.10	fooling-rate: 38.25
+iter: 39000	top-1: 0.09	fooling-rate: 38.24
+iter: 40000	top-1: 0.10	fooling-rate: 38.26
+iter: 41000	top-1: 0.10	fooling-rate: 38.29
+iter: 42000	top-1: 0.10	fooling-rate: 38.25
+iter: 43000	top-1: 0.10	fooling-rate: 38.28
+iter: 44000	top-1: 0.10	fooling-rate: 38.32
+iter: 45000	top-1: 0.10	fooling-rate: 38.34
+iter: 46000	top-1: 0.10	fooling-rate: 38.35
+iter: 47000	top-1: 0.10	fooling-rate: 38.37
+iter: 48000	top-1: 0.10	fooling-rate: 38.31
+iter: 49000	top-1: 0.10	fooling-rate: 38.32
+Top-1 Accuracy = 0.10
+Fooling Rate = 38.33
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 21:01:28.043919: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 21:01:28.074824: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 21:01:28.076384: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f10b7180d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 21:01:28.076428: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 21:01:28.077881: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 21:01:28.087402: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 21:01:28.087450: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 21:01:28.087463: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 21:01:28.087602: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 21:01:28.087636: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 21:01:28.087648: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 37.00
+iter:  2000	top-1: 0.10	fooling-rate: 36.65
+iter:  3000	top-1: 0.07	fooling-rate: 36.33
+iter:  4000	top-1: 0.05	fooling-rate: 36.65
+iter:  5000	top-1: 0.04	fooling-rate: 37.14
+iter:  6000	top-1: 0.05	fooling-rate: 37.60
+iter:  7000	top-1: 0.09	fooling-rate: 38.00
+iter:  8000	top-1: 0.07	fooling-rate: 37.80
+iter:  9000	top-1: 0.07	fooling-rate: 37.83
+iter: 10000	top-1: 0.08	fooling-rate: 37.65
+iter: 11000	top-1: 0.08	fooling-rate: 37.65
+iter: 12000	top-1: 0.07	fooling-rate: 37.72
+iter: 13000	top-1: 0.07	fooling-rate: 37.89
+iter: 14000	top-1: 0.06	fooling-rate: 38.17
+iter: 15000	top-1: 0.07	fooling-rate: 38.13
+iter: 16000	top-1: 0.07	fooling-rate: 38.14
+iter: 17000	top-1: 0.08	fooling-rate: 38.09
+iter: 18000	top-1: 0.09	fooling-rate: 38.01
+iter: 19000	top-1: 0.09	fooling-rate: 38.02
+iter: 20000	top-1: 0.10	fooling-rate: 38.02
+iter: 21000	top-1: 0.10	fooling-rate: 38.03
+iter: 22000	top-1: 0.10	fooling-rate: 38.05
+iter: 23000	top-1: 0.10	fooling-rate: 38.12
+iter: 24000	top-1: 0.10	fooling-rate: 38.06
+iter: 25000	top-1: 0.10	fooling-rate: 38.08
+iter: 26000	top-1: 0.10	fooling-rate: 38.21
+iter: 27000	top-1: 0.10	fooling-rate: 38.20
+iter: 28000	top-1: 0.10	fooling-rate: 38.27
+iter: 29000	top-1: 0.10	fooling-rate: 38.33
+iter: 30000	top-1: 0.10	fooling-rate: 38.40
+iter: 31000	top-1: 0.09	fooling-rate: 38.43
+iter: 32000	top-1: 0.09	fooling-rate: 38.32
+iter: 33000	top-1: 0.09	fooling-rate: 38.42
+iter: 34000	top-1: 0.09	fooling-rate: 38.40
+iter: 35000	top-1: 0.09	fooling-rate: 38.37
+iter: 36000	top-1: 0.09	fooling-rate: 38.38
+iter: 37000	top-1: 0.09	fooling-rate: 38.29
+iter: 38000	top-1: 0.09	fooling-rate: 38.25
+iter: 39000	top-1: 0.09	fooling-rate: 38.28
+iter: 40000	top-1: 0.10	fooling-rate: 38.31
+iter: 41000	top-1: 0.10	fooling-rate: 38.38
+iter: 42000	top-1: 0.10	fooling-rate: 38.35
+iter: 43000	top-1: 0.10	fooling-rate: 38.39
+iter: 44000	top-1: 0.10	fooling-rate: 38.40
+iter: 45000	top-1: 0.10	fooling-rate: 38.40
+iter: 46000	top-1: 0.10	fooling-rate: 38.45
+iter: 47000	top-1: 0.10	fooling-rate: 38.45
+iter: 48000	top-1: 0.10	fooling-rate: 38.41
+iter: 49000	top-1: 0.10	fooling-rate: 38.41
+Top-1 Accuracy = 0.10
+Fooling Rate = 38.38
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 22:35:34.483420: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 22:35:34.514855: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 22:35:34.516764: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555b9dd34070 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 22:35:34.516836: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 22:35:34.518316: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 22:35:34.527674: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 22:35:34.527721: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 22:35:34.527734: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 22:35:34.527877: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 22:35:34.527912: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 22:35:34.527924: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+weights/vgg_f.npy
+iter:  1000	top-1: 0.10	fooling-rate: 34.30
+iter:  2000	top-1: 0.10	fooling-rate: 33.65
+iter:  3000	top-1: 0.13	fooling-rate: 34.67
+iter:  4000	top-1: 0.10	fooling-rate: 34.38
+iter:  5000	top-1: 0.10	fooling-rate: 34.96
+iter:  6000	top-1: 0.08	fooling-rate: 35.10
+iter:  7000	top-1: 0.11	fooling-rate: 35.04
+iter:  8000	top-1: 0.10	fooling-rate: 35.12
+iter:  9000	top-1: 0.09	fooling-rate: 35.19
+iter: 10000	top-1: 0.10	fooling-rate: 35.09
+iter: 11000	top-1: 0.10	fooling-rate: 35.05
+iter: 12000	top-1: 0.09	fooling-rate: 34.99
+iter: 13000	top-1: 0.08	fooling-rate: 34.95
+iter: 14000	top-1: 0.08	fooling-rate: 35.19
+iter: 15000	top-1: 0.07	fooling-rate: 35.19
+iter: 16000	top-1: 0.08	fooling-rate: 35.22
+iter: 17000	top-1: 0.08	fooling-rate: 35.13
+iter: 18000	top-1: 0.09	fooling-rate: 35.17
+iter: 19000	top-1: 0.09	fooling-rate: 35.07
+iter: 20000	top-1: 0.10	fooling-rate: 35.08
+iter: 21000	top-1: 0.09	fooling-rate: 34.95
+iter: 22000	top-1: 0.09	fooling-rate: 34.98
+iter: 23000	top-1: 0.10	fooling-rate: 35.11
+iter: 24000	top-1: 0.09	fooling-rate: 35.12
+iter: 25000	top-1: 0.09	fooling-rate: 35.30
+iter: 26000	top-1: 0.08	fooling-rate: 35.34
+iter: 27000	top-1: 0.09	fooling-rate: 35.29
+iter: 28000	top-1: 0.09	fooling-rate: 35.27
+iter: 29000	top-1: 0.09	fooling-rate: 35.36
+iter: 30000	top-1: 0.09	fooling-rate: 35.39
+iter: 31000	top-1: 0.09	fooling-rate: 35.35
+iter: 32000	top-1: 0.09	fooling-rate: 35.21
+iter: 33000	top-1: 0.09	fooling-rate: 35.31
+iter: 34000	top-1: 0.09	fooling-rate: 35.27
+iter: 35000	top-1: 0.09	fooling-rate: 35.29
+iter: 36000	top-1: 0.09	fooling-rate: 35.29
+iter: 37000	top-1: 0.09	fooling-rate: 35.28
+iter: 38000	top-1: 0.09	fooling-rate: 35.30
+iter: 39000	top-1: 0.09	fooling-rate: 35.26
+iter: 40000	top-1: 0.10	fooling-rate: 35.31
+iter: 41000	top-1: 0.10	fooling-rate: 35.34
+iter: 42000	top-1: 0.10	fooling-rate: 35.27
+iter: 43000	top-1: 0.10	fooling-rate: 35.30
+iter: 44000	top-1: 0.10	fooling-rate: 35.28
+iter: 45000	top-1: 0.10	fooling-rate: 35.30
+iter: 46000	top-1: 0.10	fooling-rate: 35.25
+iter: 47000	top-1: 0.10	fooling-rate: 35.26
+iter: 48000	top-1: 0.10	fooling-rate: 35.23
+iter: 49000	top-1: 0.10	fooling-rate: 35.27
+Top-1 Accuracy = 0.10
+Fooling Rate = 35.29
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 23:09:47.362060: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 23:09:47.390890: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 23:09:47.392588: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55d622cd7480 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 23:09:47.392641: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 23:09:47.394091: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 23:09:47.403182: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 23:09:47.403227: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 23:09:47.403238: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 23:09:47.403353: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 23:09:47.403383: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 23:09:47.403394: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 34.80
+iter:  2000	top-1: 0.05	fooling-rate: 34.60
+iter:  3000	top-1: 0.07	fooling-rate: 35.30
+iter:  4000	top-1: 0.05	fooling-rate: 35.38
+iter:  5000	top-1: 0.04	fooling-rate: 35.80
+iter:  6000	top-1: 0.07	fooling-rate: 35.85
+iter:  7000	top-1: 0.10	fooling-rate: 36.19
+iter:  8000	top-1: 0.09	fooling-rate: 35.52
+iter:  9000	top-1: 0.09	fooling-rate: 35.56
+iter: 10000	top-1: 0.08	fooling-rate: 35.66
+iter: 11000	top-1: 0.08	fooling-rate: 35.78
+iter: 12000	top-1: 0.07	fooling-rate: 35.65
+iter: 13000	top-1: 0.08	fooling-rate: 35.81
+iter: 14000	top-1: 0.07	fooling-rate: 35.86
+iter: 15000	top-1: 0.07	fooling-rate: 35.86
+iter: 16000	top-1: 0.08	fooling-rate: 35.81
+iter: 17000	top-1: 0.08	fooling-rate: 35.57
+iter: 18000	top-1: 0.08	fooling-rate: 35.39
+iter: 19000	top-1: 0.08	fooling-rate: 35.34
+iter: 20000	top-1: 0.08	fooling-rate: 35.45
+iter: 21000	top-1: 0.08	fooling-rate: 35.33
+iter: 22000	top-1: 0.07	fooling-rate: 35.28
+iter: 23000	top-1: 0.07	fooling-rate: 35.33
+iter: 24000	top-1: 0.07	fooling-rate: 35.38
+iter: 25000	top-1: 0.07	fooling-rate: 35.41
+iter: 26000	top-1: 0.07	fooling-rate: 35.48
+iter: 27000	top-1: 0.07	fooling-rate: 35.51
+iter: 28000	top-1: 0.07	fooling-rate: 35.64
+iter: 29000	top-1: 0.07	fooling-rate: 35.66
+iter: 30000	top-1: 0.07	fooling-rate: 35.65
+iter: 31000	top-1: 0.07	fooling-rate: 35.64
+iter: 32000	top-1: 0.07	fooling-rate: 35.59
+iter: 33000	top-1: 0.07	fooling-rate: 35.59
+iter: 34000	top-1: 0.07	fooling-rate: 35.56
+iter: 35000	top-1: 0.07	fooling-rate: 35.60
+iter: 36000	top-1: 0.07	fooling-rate: 35.65
+iter: 37000	top-1: 0.07	fooling-rate: 35.61
+iter: 38000	top-1: 0.07	fooling-rate: 35.62
+iter: 39000	top-1: 0.07	fooling-rate: 35.67
+iter: 40000	top-1: 0.07	fooling-rate: 35.68
+iter: 41000	top-1: 0.07	fooling-rate: 35.70
+iter: 42000	top-1: 0.07	fooling-rate: 35.65
+iter: 43000	top-1: 0.07	fooling-rate: 35.72
+iter: 44000	top-1: 0.08	fooling-rate: 35.70
+iter: 45000	top-1: 0.08	fooling-rate: 35.65
+iter: 46000	top-1: 0.08	fooling-rate: 35.63
+iter: 47000	top-1: 0.08	fooling-rate: 35.61
+iter: 48000	top-1: 0.08	fooling-rate: 35.55
+iter: 49000	top-1: 0.08	fooling-rate: 35.61
+Top-1 Accuracy = 0.08
+Fooling Rate = 35.60
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/googlenet.py:38: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 23:45:46.578225: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 23:45:46.583195: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 23:45:46.584595: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55e061220cf0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 23:45:46.584647: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 23:45:46.586080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 23:45:46.595152: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 23:45:46.595186: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 23:45:46.595195: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 23:45:46.595311: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 23:45:46.595335: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 23:45:46.595344: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 57.60
+iter:  2000	top-1: 0.05	fooling-rate: 58.65
+iter:  3000	top-1: 0.07	fooling-rate: 59.10
+iter:  4000	top-1: 0.05	fooling-rate: 59.45
+iter:  5000	top-1: 0.04	fooling-rate: 59.82
+iter:  6000	top-1: 0.05	fooling-rate: 59.88
+iter:  7000	top-1: 0.09	fooling-rate: 60.10
+iter:  8000	top-1: 0.07	fooling-rate: 60.01
+iter:  9000	top-1: 0.07	fooling-rate: 60.13
+iter: 10000	top-1: 0.07	fooling-rate: 60.50
+iter: 11000	top-1: 0.08	fooling-rate: 60.70
+iter: 12000	top-1: 0.07	fooling-rate: 60.67
+iter: 13000	top-1: 0.07	fooling-rate: 60.72
+iter: 14000	top-1: 0.06	fooling-rate: 60.88
+iter: 15000	top-1: 0.07	fooling-rate: 61.09
+iter: 16000	top-1: 0.07	fooling-rate: 61.22
+iter: 17000	top-1: 0.08	fooling-rate: 61.05
+iter: 18000	top-1: 0.09	fooling-rate: 60.97
+iter: 19000	top-1: 0.09	fooling-rate: 61.02
+iter: 20000	top-1: 0.09	fooling-rate: 61.13
+iter: 21000	top-1: 0.09	fooling-rate: 61.14
+iter: 22000	top-1: 0.08	fooling-rate: 61.09
+iter: 23000	top-1: 0.09	fooling-rate: 61.14
+iter: 24000	top-1: 0.08	fooling-rate: 61.08
+iter: 25000	top-1: 0.08	fooling-rate: 60.98
+iter: 26000	top-1: 0.09	fooling-rate: 61.04
+iter: 27000	top-1: 0.09	fooling-rate: 61.04
+iter: 28000	top-1: 0.09	fooling-rate: 61.05
+iter: 29000	top-1: 0.09	fooling-rate: 61.00
+iter: 30000	top-1: 0.08	fooling-rate: 61.03
+iter: 31000	top-1: 0.08	fooling-rate: 61.01
+iter: 32000	top-1: 0.08	fooling-rate: 60.91
+iter: 33000	top-1: 0.08	fooling-rate: 60.95
+iter: 34000	top-1: 0.08	fooling-rate: 60.97
+iter: 35000	top-1: 0.08	fooling-rate: 60.95
+iter: 36000	top-1: 0.08	fooling-rate: 60.96
+iter: 37000	top-1: 0.08	fooling-rate: 60.87
+iter: 38000	top-1: 0.08	fooling-rate: 60.85
+iter: 39000	top-1: 0.08	fooling-rate: 60.81
+iter: 40000	top-1: 0.08	fooling-rate: 60.85
+iter: 41000	top-1: 0.08	fooling-rate: 60.76
+iter: 42000	top-1: 0.08	fooling-rate: 60.74
+iter: 43000	top-1: 0.08	fooling-rate: 60.77
+iter: 44000	top-1: 0.09	fooling-rate: 60.72
+iter: 45000	top-1: 0.09	fooling-rate: 60.73
+iter: 46000	top-1: 0.08	fooling-rate: 60.72
+iter: 47000	top-1: 0.09	fooling-rate: 60.73
+iter: 48000	top-1: 0.08	fooling-rate: 60.74
+iter: 49000	top-1: 0.08	fooling-rate: 60.77
+Top-1 Accuracy = 0.09
+Fooling Rate = 60.77
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_16.py:43: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 00:28:33.970469: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 00:28:33.998923: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 00:28:34.000699: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555e9276c930 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 00:28:34.000748: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 00:28:34.002227: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 00:28:34.011588: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 00:28:34.011631: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 00:28:34.011640: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 00:28:34.011746: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 00:28:34.011770: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 00:28:34.011778: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 27.90
+iter:  2000	top-1: 0.10	fooling-rate: 28.05
+iter:  3000	top-1: 0.10	fooling-rate: 28.57
+iter:  4000	top-1: 0.07	fooling-rate: 28.65
+iter:  5000	top-1: 0.06	fooling-rate: 29.04
+iter:  6000	top-1: 0.08	fooling-rate: 29.42
+iter:  7000	top-1: 0.13	fooling-rate: 29.36
+iter:  8000	top-1: 0.11	fooling-rate: 28.89
+iter:  9000	top-1: 0.10	fooling-rate: 28.74
+iter: 10000	top-1: 0.10	fooling-rate: 28.68
+iter: 11000	top-1: 0.10	fooling-rate: 28.84
+iter: 12000	top-1: 0.09	fooling-rate: 29.02
+iter: 13000	top-1: 0.08	fooling-rate: 29.06
+iter: 14000	top-1: 0.08	fooling-rate: 29.22
+iter: 15000	top-1: 0.08	fooling-rate: 29.03
+iter: 16000	top-1: 0.09	fooling-rate: 29.12
+iter: 17000	top-1: 0.09	fooling-rate: 29.04
+iter: 18000	top-1: 0.09	fooling-rate: 28.98
+iter: 19000	top-1: 0.09	fooling-rate: 29.03
+iter: 20000	top-1: 0.10	fooling-rate: 29.06
+iter: 21000	top-1: 0.10	fooling-rate: 29.15
+iter: 22000	top-1: 0.10	fooling-rate: 29.12
+iter: 23000	top-1: 0.10	fooling-rate: 29.16
+iter: 24000	top-1: 0.10	fooling-rate: 29.18
+iter: 25000	top-1: 0.10	fooling-rate: 29.21
+iter: 26000	top-1: 0.10	fooling-rate: 29.19
+iter: 27000	top-1: 0.10	fooling-rate: 29.18
+iter: 28000	top-1: 0.09	fooling-rate: 29.24
+iter: 29000	top-1: 0.10	fooling-rate: 29.22
+iter: 30000	top-1: 0.09	fooling-rate: 29.25
+iter: 31000	top-1: 0.09	fooling-rate: 29.28
+iter: 32000	top-1: 0.09	fooling-rate: 29.24
+iter: 33000	top-1: 0.09	fooling-rate: 29.32
+iter: 34000	top-1: 0.09	fooling-rate: 29.27
+iter: 35000	top-1: 0.09	fooling-rate: 29.27
+iter: 36000	top-1: 0.09	fooling-rate: 29.30
+iter: 37000	top-1: 0.09	fooling-rate: 29.24
+iter: 38000	top-1: 0.10	fooling-rate: 29.24
+iter: 39000	top-1: 0.09	fooling-rate: 29.18
+iter: 40000	top-1: 0.10	fooling-rate: 29.25
+iter: 41000	top-1: 0.10	fooling-rate: 29.28
+iter: 42000	top-1: 0.10	fooling-rate: 29.25
+iter: 43000	top-1: 0.10	fooling-rate: 29.28
+iter: 44000	top-1: 0.10	fooling-rate: 29.30
+iter: 45000	top-1: 0.10	fooling-rate: 29.28
+iter: 46000	top-1: 0.10	fooling-rate: 29.29
+iter: 47000	top-1: 0.10	fooling-rate: 29.35
+iter: 48000	top-1: 0.10	fooling-rate: 29.29
+iter: 49000	top-1: 0.10	fooling-rate: 29.30
+Top-1 Accuracy = 0.10
+Fooling Rate = 29.26
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 01:52:56.310330: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 01:52:56.338814: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 01:52:56.340524: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x560590efb7d0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 01:52:56.340589: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 01:52:56.342080: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 01:52:56.351196: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 01:52:56.351243: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 01:52:56.351255: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 01:52:56.351388: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 01:52:56.351418: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 01:52:56.351429: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 27.40
+iter:  2000	top-1: 0.10	fooling-rate: 28.55
+iter:  3000	top-1: 0.07	fooling-rate: 28.63
+iter:  4000	top-1: 0.05	fooling-rate: 28.73
+iter:  5000	top-1: 0.04	fooling-rate: 28.84
+iter:  6000	top-1: 0.05	fooling-rate: 29.22
+iter:  7000	top-1: 0.09	fooling-rate: 29.47
+iter:  8000	top-1: 0.07	fooling-rate: 29.40
+iter:  9000	top-1: 0.07	fooling-rate: 29.47
+iter: 10000	top-1: 0.08	fooling-rate: 29.38
+iter: 11000	top-1: 0.08	fooling-rate: 29.40
+iter: 12000	top-1: 0.07	fooling-rate: 29.51
+iter: 13000	top-1: 0.07	fooling-rate: 29.58
+iter: 14000	top-1: 0.06	fooling-rate: 29.76
+iter: 15000	top-1: 0.07	fooling-rate: 29.71
+iter: 16000	top-1: 0.07	fooling-rate: 29.79
+iter: 17000	top-1: 0.08	fooling-rate: 29.81
+iter: 18000	top-1: 0.09	fooling-rate: 29.76
+iter: 19000	top-1: 0.09	fooling-rate: 29.68
+iter: 20000	top-1: 0.10	fooling-rate: 29.74
+iter: 21000	top-1: 0.10	fooling-rate: 29.67
+iter: 22000	top-1: 0.10	fooling-rate: 29.66
+iter: 23000	top-1: 0.10	fooling-rate: 29.66
+iter: 24000	top-1: 0.10	fooling-rate: 29.58
+iter: 25000	top-1: 0.10	fooling-rate: 29.65
+iter: 26000	top-1: 0.10	fooling-rate: 29.68
+iter: 27000	top-1: 0.10	fooling-rate: 29.62
+iter: 28000	top-1: 0.10	fooling-rate: 29.70
+iter: 29000	top-1: 0.10	fooling-rate: 29.71
+iter: 30000	top-1: 0.10	fooling-rate: 29.75
+iter: 31000	top-1: 0.09	fooling-rate: 29.78
+iter: 32000	top-1: 0.09	fooling-rate: 29.77
+iter: 33000	top-1: 0.09	fooling-rate: 29.80
+iter: 34000	top-1: 0.09	fooling-rate: 29.77
+iter: 35000	top-1: 0.09	fooling-rate: 29.79
+iter: 36000	top-1: 0.09	fooling-rate: 29.74
+iter: 37000	top-1: 0.09	fooling-rate: 29.72
+iter: 38000	top-1: 0.09	fooling-rate: 29.69
+iter: 39000	top-1: 0.09	fooling-rate: 29.67
+iter: 40000	top-1: 0.10	fooling-rate: 29.69
+iter: 41000	top-1: 0.10	fooling-rate: 29.71
+iter: 42000	top-1: 0.10	fooling-rate: 29.69
+iter: 43000	top-1: 0.10	fooling-rate: 29.71
+iter: 44000	top-1: 0.10	fooling-rate: 29.69
+iter: 45000	top-1: 0.10	fooling-rate: 29.72
+iter: 46000	top-1: 0.10	fooling-rate: 29.74
+iter: 47000	top-1: 0.10	fooling-rate: 29.71
+iter: 48000	top-1: 0.10	fooling-rate: 29.67
+iter: 49000	top-1: 0.10	fooling-rate: 29.66
+Top-1 Accuracy = 0.10
+Fooling Rate = 29.66
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 03:27:10.081761: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 03:27:10.110946: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 03:27:10.112668: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c2294ab490 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 03:27:10.112734: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 03:27:10.114237: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 03:27:10.123670: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 03:27:10.123706: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 03:27:10.123716: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 03:27:10.123824: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 03:27:10.123850: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 03:27:10.123858: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+weights/vgg_f.npy
+iter:  1000	top-1: 0.10	fooling-rate: 46.20
+iter:  2000	top-1: 0.10	fooling-rate: 45.85
+iter:  3000	top-1: 0.13	fooling-rate: 46.63
+iter:  4000	top-1: 0.10	fooling-rate: 46.80
+iter:  5000	top-1: 0.10	fooling-rate: 47.66
+iter:  6000	top-1: 0.08	fooling-rate: 47.60
+iter:  7000	top-1: 0.11	fooling-rate: 47.54
+iter:  8000	top-1: 0.10	fooling-rate: 47.56
+iter:  9000	top-1: 0.09	fooling-rate: 47.64
+iter: 10000	top-1: 0.10	fooling-rate: 47.62
+iter: 11000	top-1: 0.10	fooling-rate: 47.60
+iter: 12000	top-1: 0.09	fooling-rate: 47.57
+iter: 13000	top-1: 0.08	fooling-rate: 47.54
+iter: 14000	top-1: 0.08	fooling-rate: 47.61
+iter: 15000	top-1: 0.07	fooling-rate: 47.73
+iter: 16000	top-1: 0.08	fooling-rate: 47.62
+iter: 17000	top-1: 0.08	fooling-rate: 47.55
+iter: 18000	top-1: 0.09	fooling-rate: 47.42
+iter: 19000	top-1: 0.09	fooling-rate: 47.31
+iter: 20000	top-1: 0.10	fooling-rate: 47.33
+iter: 21000	top-1: 0.09	fooling-rate: 47.27
+iter: 22000	top-1: 0.09	fooling-rate: 47.31
+iter: 23000	top-1: 0.10	fooling-rate: 47.46
+iter: 24000	top-1: 0.09	fooling-rate: 47.61
+iter: 25000	top-1: 0.09	fooling-rate: 47.65
+iter: 26000	top-1: 0.08	fooling-rate: 47.60
+iter: 27000	top-1: 0.09	fooling-rate: 47.56
+iter: 28000	top-1: 0.09	fooling-rate: 47.58
+iter: 29000	top-1: 0.09	fooling-rate: 47.64
+iter: 30000	top-1: 0.09	fooling-rate: 47.60
+iter: 31000	top-1: 0.09	fooling-rate: 47.62
+iter: 32000	top-1: 0.09	fooling-rate: 47.50
+iter: 33000	top-1: 0.09	fooling-rate: 47.59
+iter: 34000	top-1: 0.09	fooling-rate: 47.63
+iter: 35000	top-1: 0.09	fooling-rate: 47.64
+iter: 36000	top-1: 0.09	fooling-rate: 47.61
+iter: 37000	top-1: 0.09	fooling-rate: 47.62
+iter: 38000	top-1: 0.09	fooling-rate: 47.63
+iter: 39000	top-1: 0.09	fooling-rate: 47.62
+iter: 40000	top-1: 0.10	fooling-rate: 47.61
+iter: 41000	top-1: 0.10	fooling-rate: 47.66
+iter: 42000	top-1: 0.10	fooling-rate: 47.62
+iter: 43000	top-1: 0.10	fooling-rate: 47.63
+iter: 44000	top-1: 0.10	fooling-rate: 47.63
+iter: 45000	top-1: 0.10	fooling-rate: 47.63
+iter: 46000	top-1: 0.10	fooling-rate: 47.56
+iter: 47000	top-1: 0.10	fooling-rate: 47.56
+iter: 48000	top-1: 0.10	fooling-rate: 47.51
+iter: 49000	top-1: 0.10	fooling-rate: 47.56
+Top-1 Accuracy = 0.10
+Fooling Rate = 47.58
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 04:01:28.347181: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 04:01:28.374913: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 04:01:28.376544: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x562514c19e90 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 04:01:28.376596: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 04:01:28.378069: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 04:01:28.387316: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 04:01:28.387361: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 04:01:28.387373: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 04:01:28.387507: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 04:01:28.387539: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 04:01:28.387550: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 44.20
+iter:  2000	top-1: 0.05	fooling-rate: 43.55
+iter:  3000	top-1: 0.07	fooling-rate: 43.77
+iter:  4000	top-1: 0.05	fooling-rate: 43.58
+iter:  5000	top-1: 0.04	fooling-rate: 44.02
+iter:  6000	top-1: 0.07	fooling-rate: 44.15
+iter:  7000	top-1: 0.10	fooling-rate: 44.34
+iter:  8000	top-1: 0.09	fooling-rate: 44.07
+iter:  9000	top-1: 0.09	fooling-rate: 44.18
+iter: 10000	top-1: 0.08	fooling-rate: 44.13
+iter: 11000	top-1: 0.08	fooling-rate: 44.44
+iter: 12000	top-1: 0.07	fooling-rate: 44.49
+iter: 13000	top-1: 0.08	fooling-rate: 44.62
+iter: 14000	top-1: 0.07	fooling-rate: 44.75
+iter: 15000	top-1: 0.07	fooling-rate: 44.72
+iter: 16000	top-1: 0.08	fooling-rate: 44.65
+iter: 17000	top-1: 0.08	fooling-rate: 44.51
+iter: 18000	top-1: 0.08	fooling-rate: 44.44
+iter: 19000	top-1: 0.08	fooling-rate: 44.43
+iter: 20000	top-1: 0.08	fooling-rate: 44.44
+iter: 21000	top-1: 0.08	fooling-rate: 44.37
+iter: 22000	top-1: 0.07	fooling-rate: 44.31
+iter: 23000	top-1: 0.07	fooling-rate: 44.43
+iter: 24000	top-1: 0.07	fooling-rate: 44.49
+iter: 25000	top-1: 0.07	fooling-rate: 44.57
+iter: 26000	top-1: 0.07	fooling-rate: 44.68
+iter: 27000	top-1: 0.07	fooling-rate: 44.62
+iter: 28000	top-1: 0.07	fooling-rate: 44.67
+iter: 29000	top-1: 0.07	fooling-rate: 44.74
+iter: 30000	top-1: 0.07	fooling-rate: 44.73
+iter: 31000	top-1: 0.07	fooling-rate: 44.74
+iter: 32000	top-1: 0.07	fooling-rate: 44.63
+iter: 33000	top-1: 0.07	fooling-rate: 44.68
+iter: 34000	top-1: 0.07	fooling-rate: 44.63
+iter: 35000	top-1: 0.07	fooling-rate: 44.61
+iter: 36000	top-1: 0.07	fooling-rate: 44.69
+iter: 37000	top-1: 0.07	fooling-rate: 44.69
+iter: 38000	top-1: 0.07	fooling-rate: 44.70
+iter: 39000	top-1: 0.07	fooling-rate: 44.69
+iter: 40000	top-1: 0.07	fooling-rate: 44.67
+iter: 41000	top-1: 0.07	fooling-rate: 44.74
+iter: 42000	top-1: 0.07	fooling-rate: 44.69
+iter: 43000	top-1: 0.07	fooling-rate: 44.70
+iter: 44000	top-1: 0.08	fooling-rate: 44.69
+iter: 45000	top-1: 0.08	fooling-rate: 44.69
+iter: 46000	top-1: 0.08	fooling-rate: 44.65
+iter: 47000	top-1: 0.08	fooling-rate: 44.60
+iter: 48000	top-1: 0.08	fooling-rate: 44.59
+iter: 49000	top-1: 0.08	fooling-rate: 44.66
+Top-1 Accuracy = 0.08
+Fooling Rate = 44.64
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/googlenet.py:38: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 04:37:23.655779: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 04:37:23.667116: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 04:37:23.668694: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55c7a06d2cd0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 04:37:23.668728: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 04:37:23.670158: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 04:37:23.679254: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 04:37:23.679302: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 04:37:23.679314: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 04:37:23.679445: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 04:37:23.679479: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 04:37:23.679492: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 35.00
+iter:  2000	top-1: 0.05	fooling-rate: 35.10
+iter:  3000	top-1: 0.07	fooling-rate: 35.20
+iter:  4000	top-1: 0.05	fooling-rate: 35.02
+iter:  5000	top-1: 0.04	fooling-rate: 35.06
+iter:  6000	top-1: 0.05	fooling-rate: 35.37
+iter:  7000	top-1: 0.09	fooling-rate: 35.36
+iter:  8000	top-1: 0.07	fooling-rate: 35.30
+iter:  9000	top-1: 0.07	fooling-rate: 35.43
+iter: 10000	top-1: 0.07	fooling-rate: 35.46
+iter: 11000	top-1: 0.08	fooling-rate: 35.55
+iter: 12000	top-1: 0.07	fooling-rate: 35.72
+iter: 13000	top-1: 0.07	fooling-rate: 35.75
+iter: 14000	top-1: 0.06	fooling-rate: 36.09
+iter: 15000	top-1: 0.07	fooling-rate: 36.24
+iter: 16000	top-1: 0.07	fooling-rate: 36.33
+iter: 17000	top-1: 0.08	fooling-rate: 36.30
+iter: 18000	top-1: 0.09	fooling-rate: 36.11
+iter: 19000	top-1: 0.09	fooling-rate: 36.14
+iter: 20000	top-1: 0.09	fooling-rate: 36.18
+iter: 21000	top-1: 0.09	fooling-rate: 36.30
+iter: 22000	top-1: 0.08	fooling-rate: 36.23
+iter: 23000	top-1: 0.09	fooling-rate: 36.27
+iter: 24000	top-1: 0.08	fooling-rate: 36.32
+iter: 25000	top-1: 0.08	fooling-rate: 36.32
+iter: 26000	top-1: 0.09	fooling-rate: 36.38
+iter: 27000	top-1: 0.09	fooling-rate: 36.40
+iter: 28000	top-1: 0.09	fooling-rate: 36.45
+iter: 29000	top-1: 0.09	fooling-rate: 36.38
+iter: 30000	top-1: 0.08	fooling-rate: 36.38
+iter: 31000	top-1: 0.08	fooling-rate: 36.35
+iter: 32000	top-1: 0.08	fooling-rate: 36.29
+iter: 33000	top-1: 0.08	fooling-rate: 36.33
+iter: 34000	top-1: 0.08	fooling-rate: 36.31
+iter: 35000	top-1: 0.08	fooling-rate: 36.27
+iter: 36000	top-1: 0.08	fooling-rate: 36.27
+iter: 37000	top-1: 0.08	fooling-rate: 36.22
+iter: 38000	top-1: 0.08	fooling-rate: 36.19
+iter: 39000	top-1: 0.08	fooling-rate: 36.16
+iter: 40000	top-1: 0.08	fooling-rate: 36.18
+iter: 41000	top-1: 0.08	fooling-rate: 36.20
+iter: 42000	top-1: 0.08	fooling-rate: 36.20
+iter: 43000	top-1: 0.08	fooling-rate: 36.24
+iter: 44000	top-1: 0.09	fooling-rate: 36.19
+iter: 45000	top-1: 0.09	fooling-rate: 36.14
+iter: 46000	top-1: 0.08	fooling-rate: 36.14
+iter: 47000	top-1: 0.09	fooling-rate: 36.16
+iter: 48000	top-1: 0.08	fooling-rate: 36.13
+iter: 49000	top-1: 0.08	fooling-rate: 36.14
+Top-1 Accuracy = 0.09
+Fooling Rate = 36.17
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_16.py:43: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 05:20:09.571348: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 05:20:09.598824: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 05:20:09.600427: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x564520d601f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 05:20:09.600476: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 05:20:09.601546: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 05:20:09.609091: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-14 05:20:09.609140: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-14 05:20:09.609153: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-14 05:20:09.609285: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-14 05:20:09.609461: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-14 05:20:09.609473: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+Killed
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 06:39:24.505488: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 06:39:24.534858: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 06:39:24.536518: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ac6a0140f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:39:24.536575: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 06:39:24.538410: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 06:39:24.908647: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 06:39:24.909308: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 06:39:24.909913: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:67:00.0
+2021-05-14 06:39:24.910320: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.575
+pciBusID: 0000:68:00.0
+2021-05-14 06:39:24.910543: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:39:24.911360: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:39:24.912231: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 06:39:24.912487: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 06:39:24.913325: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 06:39:24.914036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 06:39:24.916233: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:39:24.920786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2021-05-14 06:39:24.920827: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:39:24.923764: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 06:39:24.923778: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 3 
+2021-05-14 06:39:24.923786: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N N N 
+2021-05-14 06:39:24.923789: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N N N 
+2021-05-14 06:39:24.923792: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N N N N 
+2021-05-14 06:39:24.923794: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N N N N 
+2021-05-14 06:39:24.927253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10312 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 06:39:24.928878: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10312 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 06:39:24.930285: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10312 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:67:00.0, compute capability: 7.5)
+2021-05-14 06:39:24.931396: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 1976 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:68:00.0, compute capability: 7.5)
+2021-05-14 06:39:24.933102: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55ac77f88dd0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:39:24.933143: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:39:24.933157: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:39:24.933167: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:39:24.933177: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 06:39:40.712002: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:39:40.867022: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:39:41.834058: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+Killed
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 06:41:10.392918: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 06:41:10.414883: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 06:41:10.416465: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55bcfa0a4980 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:41:10.416514: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 06:41:10.418327: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 06:41:10.808967: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 06:41:10.809621: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 06:41:10.810220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:67:00.0
+2021-05-14 06:41:10.810658: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.575
+pciBusID: 0000:68:00.0
+2021-05-14 06:41:10.810874: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:41:10.811676: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:41:10.812551: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 06:41:10.812810: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 06:41:10.813678: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 06:41:10.814412: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 06:41:10.816601: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:41:10.821083: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2021-05-14 06:41:10.821131: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:41:10.824124: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 06:41:10.824135: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 3 
+2021-05-14 06:41:10.824139: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N N N 
+2021-05-14 06:41:10.824141: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N N N 
+2021-05-14 06:41:10.824143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N N N N 
+2021-05-14 06:41:10.824146: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N N N N 
+2021-05-14 06:41:10.827581: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10312 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 06:41:10.829154: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10312 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 06:41:10.830717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10312 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:67:00.0, compute capability: 7.5)
+2021-05-14 06:41:10.831766: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 1976 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:68:00.0, compute capability: 7.5)
+2021-05-14 06:41:10.833534: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55bcfdee80c0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:41:10.833549: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:41:10.833553: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:41:10.833556: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:41:10.833559: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 06:41:18.367079: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:41:18.542926: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:41:19.502108: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+Killed
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 06:42:04.779736: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 06:42:04.810756: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 06:42:04.812479: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5612d6036510 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:42:04.812535: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 06:42:04.814319: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 06:42:05.223848: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 06:42:05.224501: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 06:42:05.225100: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 2 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:67:00.0
+2021-05-14 06:42:05.225504: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 3 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.575
+pciBusID: 0000:68:00.0
+2021-05-14 06:42:05.225717: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:42:05.226447: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:42:05.227290: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 06:42:05.227523: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 06:42:05.228361: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 06:42:05.229047: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 06:42:05.231127: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:42:05.235593: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1, 2, 3
+2021-05-14 06:42:05.235638: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 06:42:05.238510: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 06:42:05.238522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 2 3 
+2021-05-14 06:42:05.238526: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N N N 
+2021-05-14 06:42:05.238529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N N N 
+2021-05-14 06:42:05.238531: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 2:   N N N N 
+2021-05-14 06:42:05.238534: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 3:   N N N N 
+2021-05-14 06:42:05.242011: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10312 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 06:42:05.243615: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10312 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 06:42:05.245169: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:2 with 10312 MB memory) -> physical GPU (device: 2, name: GeForce RTX 2080 Ti, pci bus id: 0000:67:00.0, compute capability: 7.5)
+2021-05-14 06:42:05.246274: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:3 with 1976 MB memory) -> physical GPU (device: 3, name: GeForce RTX 2080 Ti, pci bus id: 0000:68:00.0, compute capability: 7.5)
+2021-05-14 06:42:05.248072: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5612d738f960 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 06:42:05.248086: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:42:05.248090: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:42:05.248093: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (2): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 06:42:05.248096: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (3): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 06:42:12.649720: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 06:42:12.821461: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 06:42:13.790180: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.

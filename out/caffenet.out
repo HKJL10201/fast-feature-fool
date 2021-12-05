@@ -1,0 +1,526 @@
+nohup: ignoring input
+WARNING:tensorflow:From evaluate.py:58: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_f.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:67: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:72: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 08:50:45.728616: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 08:50:45.750964: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 08:50:45.752955: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5607f372ff20 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 08:50:45.753026: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 08:50:45.754919: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 08:50:45.934313: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 08:50:45.935015: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 08:50:45.935205: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 08:50:45.935965: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 08:50:45.936783: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 08:50:45.937036: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 08:50:45.937877: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 08:50:45.938569: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 08:50:45.940653: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 08:50:45.943218: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-05-14 08:50:45.943256: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 08:50:45.945042: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 08:50:45.945052: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2021-05-14 08:50:45.945055: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N 
+2021-05-14 08:50:45.945058: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N 
+2021-05-14 08:50:45.947463: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 10312 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 08:50:45.949056: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 10312 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 08:50:45.950800: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5607f56f2130 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 08:50:45.950814: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 08:50:45.950817: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:73: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 08:50:53.335573: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 08:50:53.496658: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 08:50:54.385863: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+weights/vgg_f.npy
+iter:  1000	top-1: 0.10	fooling-rate: 55.40
+iter:  2000	top-1: 0.10	fooling-rate: 53.25
+iter:  3000	top-1: 0.13	fooling-rate: 54.30
+iter:  4000	top-1: 0.10	fooling-rate: 55.20
+iter:  5000	top-1: 0.10	fooling-rate: 55.70
+iter:  6000	top-1: 0.08	fooling-rate: 55.45
+iter:  7000	top-1: 0.11	fooling-rate: 55.87
+iter:  8000	top-1: 0.10	fooling-rate: 56.03
+iter:  9000	top-1: 0.09	fooling-rate: 56.28
+iter: 10000	top-1: 0.10	fooling-rate: 56.26
+iter: 11000	top-1: 0.10	fooling-rate: 56.47
+iter: 12000	top-1: 0.09	fooling-rate: 56.47
+iter: 13000	top-1: 0.08	fooling-rate: 56.49
+iter: 14000	top-1: 0.08	fooling-rate: 56.61
+iter: 15000	top-1: 0.07	fooling-rate: 56.62
+iter: 16000	top-1: 0.08	fooling-rate: 56.67
+iter: 17000	top-1: 0.08	fooling-rate: 56.58
+iter: 18000	top-1: 0.09	fooling-rate: 56.59
+iter: 19000	top-1: 0.09	fooling-rate: 56.56
+iter: 20000	top-1: 0.10	fooling-rate: 56.57
+iter: 21000	top-1: 0.09	fooling-rate: 56.49
+iter: 22000	top-1: 0.09	fooling-rate: 56.54
+iter: 23000	top-1: 0.10	fooling-rate: 56.71
+iter: 24000	top-1: 0.09	fooling-rate: 56.80
+iter: 25000	top-1: 0.09	fooling-rate: 56.81
+iter: 26000	top-1: 0.08	fooling-rate: 56.85
+iter: 27000	top-1: 0.09	fooling-rate: 56.79
+iter: 28000	top-1: 0.09	fooling-rate: 56.78
+iter: 29000	top-1: 0.09	fooling-rate: 56.76
+iter: 30000	top-1: 0.09	fooling-rate: 56.71
+iter: 31000	top-1: 0.09	fooling-rate: 56.73
+iter: 32000	top-1: 0.09	fooling-rate: 56.63
+iter: 33000	top-1: 0.09	fooling-rate: 56.66
+iter: 34000	top-1: 0.09	fooling-rate: 56.67
+iter: 35000	top-1: 0.09	fooling-rate: 56.63
+iter: 36000	top-1: 0.09	fooling-rate: 56.56
+iter: 37000	top-1: 0.09	fooling-rate: 56.59
+iter: 38000	top-1: 0.09	fooling-rate: 56.61
+iter: 39000	top-1: 0.09	fooling-rate: 56.59
+iter: 40000	top-1: 0.10	fooling-rate: 56.62
+iter: 41000	top-1: 0.10	fooling-rate: 56.66
+iter: 42000	top-1: 0.10	fooling-rate: 56.65
+iter: 43000	top-1: 0.10	fooling-rate: 56.60
+iter: 44000	top-1: 0.10	fooling-rate: 56.53
+iter: 45000	top-1: 0.10	fooling-rate: 56.57
+iter: 46000	top-1: 0.10	fooling-rate: 56.57
+iter: 47000	top-1: 0.10	fooling-rate: 56.60
+iter: 48000	top-1: 0.10	fooling-rate: 56.55
+iter: 49000	top-1: 0.10	fooling-rate: 56.57
+Top-1 Accuracy = 0.10
+Fooling Rate = 56.57
+WARNING:tensorflow:From evaluate.py:58: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/caffenet.py:35: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:67: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:72: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 09:07:49.311068: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 09:07:49.342831: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 09:07:49.344519: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5637f154bb80 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:07:49.344566: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 09:07:49.346425: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 09:07:49.500753: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 09:07:49.501444: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 09:07:49.501647: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:07:49.502436: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:07:49.503322: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 09:07:49.503582: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 09:07:49.504484: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 09:07:49.505214: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 09:07:49.507425: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:07:49.509915: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-05-14 09:07:49.509951: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:07:49.511714: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 09:07:49.511725: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2021-05-14 09:07:49.511730: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N 
+2021-05-14 09:07:49.511733: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N 
+2021-05-14 09:07:49.514143: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 6984 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 09:07:49.515917: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 9869 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 09:07:49.517779: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5637f33aae10 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:07:49.517795: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 09:07:49.517799: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:73: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 09:07:57.595322: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:07:57.791078: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:07:58.854725: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 81.90
+iter:  2000	top-1: 0.05	fooling-rate: 82.00
+iter:  3000	top-1: 0.07	fooling-rate: 82.40
+iter:  4000	top-1: 0.05	fooling-rate: 82.27
+iter:  5000	top-1: 0.04	fooling-rate: 82.52
+iter:  6000	top-1: 0.07	fooling-rate: 82.52
+iter:  7000	top-1: 0.10	fooling-rate: 82.67
+iter:  8000	top-1: 0.09	fooling-rate: 82.38
+iter:  9000	top-1: 0.09	fooling-rate: 82.41
+iter: 10000	top-1: 0.08	fooling-rate: 82.58
+iter: 11000	top-1: 0.08	fooling-rate: 82.80
+iter: 12000	top-1: 0.07	fooling-rate: 82.74
+iter: 13000	top-1: 0.08	fooling-rate: 82.78
+iter: 14000	top-1: 0.07	fooling-rate: 82.73
+iter: 15000	top-1: 0.07	fooling-rate: 82.73
+iter: 16000	top-1: 0.08	fooling-rate: 82.88
+iter: 17000	top-1: 0.08	fooling-rate: 82.74
+iter: 18000	top-1: 0.08	fooling-rate: 82.68
+iter: 19000	top-1: 0.08	fooling-rate: 82.68
+iter: 20000	top-1: 0.08	fooling-rate: 82.64
+iter: 21000	top-1: 0.08	fooling-rate: 82.62
+iter: 22000	top-1: 0.07	fooling-rate: 82.58
+iter: 23000	top-1: 0.07	fooling-rate: 82.67
+iter: 24000	top-1: 0.07	fooling-rate: 82.73
+iter: 25000	top-1: 0.07	fooling-rate: 82.76
+iter: 26000	top-1: 0.07	fooling-rate: 82.75
+iter: 27000	top-1: 0.07	fooling-rate: 82.77
+iter: 28000	top-1: 0.07	fooling-rate: 82.78
+iter: 29000	top-1: 0.07	fooling-rate: 82.82
+iter: 30000	top-1: 0.07	fooling-rate: 82.85
+iter: 31000	top-1: 0.07	fooling-rate: 82.81
+iter: 32000	top-1: 0.07	fooling-rate: 82.80
+iter: 33000	top-1: 0.07	fooling-rate: 82.78
+iter: 34000	top-1: 0.07	fooling-rate: 82.76
+iter: 35000	top-1: 0.07	fooling-rate: 82.74
+iter: 36000	top-1: 0.07	fooling-rate: 82.73
+iter: 37000	top-1: 0.07	fooling-rate: 82.70
+iter: 38000	top-1: 0.07	fooling-rate: 82.67
+iter: 39000	top-1: 0.07	fooling-rate: 82.68
+iter: 40000	top-1: 0.07	fooling-rate: 82.65
+iter: 41000	top-1: 0.07	fooling-rate: 82.69
+iter: 42000	top-1: 0.07	fooling-rate: 82.66
+iter: 43000	top-1: 0.07	fooling-rate: 82.63
+iter: 44000	top-1: 0.08	fooling-rate: 82.60
+iter: 45000	top-1: 0.08	fooling-rate: 82.64
+iter: 46000	top-1: 0.08	fooling-rate: 82.64
+iter: 47000	top-1: 0.08	fooling-rate: 82.63
+iter: 48000	top-1: 0.08	fooling-rate: 82.59
+iter: 49000	top-1: 0.08	fooling-rate: 82.62
+Top-1 Accuracy = 0.08
+Fooling Rate = 82.67
+WARNING:tensorflow:From evaluate.py:58: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/googlenet.py:38: The name tf.nn.avg_pool is deprecated. Please use tf.nn.avg_pool2d instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:72: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 09:27:49.931149: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 09:27:49.936378: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 09:27:49.937644: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5632fdd397e0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:27:49.937693: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 09:27:49.939514: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 09:27:50.101254: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 09:27:50.101959: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 09:27:50.102178: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:27:50.102978: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:27:50.103822: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 09:27:50.104069: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 09:27:50.104920: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 09:27:50.105659: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 09:27:50.108358: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:27:50.110662: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-05-14 09:27:50.110695: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:27:50.112351: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 09:27:50.112360: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2021-05-14 09:27:50.112364: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N 
+2021-05-14 09:27:50.112367: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N 
+2021-05-14 09:27:50.114421: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2468 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 09:27:50.116386: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 9869 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 09:27:50.118124: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5632ff504770 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:27:50.118145: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 09:27:50.118156: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:73: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 09:27:51.289703: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:27:51.481767: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:27:52.570527: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 39.80
+iter:  2000	top-1: 0.05	fooling-rate: 39.20
+iter:  3000	top-1: 0.07	fooling-rate: 40.07
+iter:  4000	top-1: 0.05	fooling-rate: 40.45
+iter:  5000	top-1: 0.04	fooling-rate: 40.98
+iter:  6000	top-1: 0.05	fooling-rate: 41.17
+iter:  7000	top-1: 0.09	fooling-rate: 41.16
+iter:  8000	top-1: 0.07	fooling-rate: 41.10
+iter:  9000	top-1: 0.07	fooling-rate: 41.09
+iter: 10000	top-1: 0.07	fooling-rate: 41.26
+iter: 11000	top-1: 0.08	fooling-rate: 41.35
+iter: 12000	top-1: 0.07	fooling-rate: 41.48
+iter: 13000	top-1: 0.07	fooling-rate: 41.47
+iter: 14000	top-1: 0.06	fooling-rate: 41.62
+iter: 15000	top-1: 0.07	fooling-rate: 41.73
+iter: 16000	top-1: 0.07	fooling-rate: 41.82
+iter: 17000	top-1: 0.08	fooling-rate: 41.75
+iter: 18000	top-1: 0.09	fooling-rate: 41.67
+iter: 19000	top-1: 0.09	fooling-rate: 41.65
+iter: 20000	top-1: 0.09	fooling-rate: 41.73
+iter: 21000	top-1: 0.09	fooling-rate: 41.89
+iter: 22000	top-1: 0.08	fooling-rate: 41.83
+iter: 23000	top-1: 0.09	fooling-rate: 41.82
+iter: 24000	top-1: 0.08	fooling-rate: 41.77
+iter: 25000	top-1: 0.08	fooling-rate: 41.68
+iter: 26000	top-1: 0.09	fooling-rate: 41.71
+iter: 27000	top-1: 0.09	fooling-rate: 41.74
+iter: 28000	top-1: 0.09	fooling-rate: 41.77
+iter: 29000	top-1: 0.09	fooling-rate: 41.73
+iter: 30000	top-1: 0.08	fooling-rate: 41.75
+iter: 31000	top-1: 0.08	fooling-rate: 41.81
+iter: 32000	top-1: 0.08	fooling-rate: 41.66
+iter: 33000	top-1: 0.08	fooling-rate: 41.72
+iter: 34000	top-1: 0.08	fooling-rate: 41.71
+iter: 35000	top-1: 0.08	fooling-rate: 41.65
+iter: 36000	top-1: 0.08	fooling-rate: 41.69
+iter: 37000	top-1: 0.08	fooling-rate: 41.62
+iter: 38000	top-1: 0.08	fooling-rate: 41.58
+iter: 39000	top-1: 0.08	fooling-rate: 41.53
+iter: 40000	top-1: 0.08	fooling-rate: 41.50
+iter: 41000	top-1: 0.08	fooling-rate: 41.48
+iter: 42000	top-1: 0.08	fooling-rate: 41.41
+iter: 43000	top-1: 0.08	fooling-rate: 41.44
+iter: 44000	top-1: 0.09	fooling-rate: 41.48
+iter: 45000	top-1: 0.09	fooling-rate: 41.45
+iter: 46000	top-1: 0.08	fooling-rate: 41.45
+iter: 47000	top-1: 0.09	fooling-rate: 41.45
+iter: 48000	top-1: 0.08	fooling-rate: 41.40
+iter: 49000	top-1: 0.08	fooling-rate: 41.43
+Top-1 Accuracy = 0.09
+Fooling Rate = 41.45
+WARNING:tensorflow:From evaluate.py:58: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_16.py:43: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:67: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:72: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 09:52:48.482580: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 09:52:48.518819: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 09:52:48.520653: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555bf7bf19f0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:52:48.520700: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 09:52:48.521628: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 09:52:48.713533: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 09:52:48.714227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 09:52:48.714434: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:52:48.715200: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:52:48.716063: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 09:52:48.716291: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 09:52:48.717167: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 09:52:48.717872: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 09:52:48.720130: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:52:48.722480: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-05-14 09:52:48.722523: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 09:52:48.724227: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 09:52:48.724244: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2021-05-14 09:52:48.724253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N 
+2021-05-14 09:52:48.724256: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N 
+2021-05-14 09:52:48.726400: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2864 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 09:52:48.728209: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 9869 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 09:52:48.729954: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x555c010383d0 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 09:52:48.729970: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 09:52:48.729974: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:73: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 09:53:04.731310: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 09:53:04.911897: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 09:53:06.027055: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-05-14 09:53:06.078513: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.078545: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.090129: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 898.56MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.090167: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 898.56MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.106420: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.05GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.106447: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.05GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.135908: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.08GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.135947: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.08GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.178301: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 09:53:06.178337: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 36.80
+iter:  2000	top-1: 0.10	fooling-rate: 37.20
+iter:  3000	top-1: 0.10	fooling-rate: 37.47
+iter:  4000	top-1: 0.07	fooling-rate: 37.33
+iter:  5000	top-1: 0.06	fooling-rate: 37.48
+iter:  6000	top-1: 0.08	fooling-rate: 37.80
+iter:  7000	top-1: 0.13	fooling-rate: 37.56
+iter:  8000	top-1: 0.11	fooling-rate: 37.25
+iter:  9000	top-1: 0.10	fooling-rate: 37.40
+iter: 10000	top-1: 0.10	fooling-rate: 37.35
+iter: 11000	top-1: 0.10	fooling-rate: 37.69
+iter: 12000	top-1: 0.09	fooling-rate: 37.92
+iter: 13000	top-1: 0.08	fooling-rate: 37.97
+iter: 14000	top-1: 0.08	fooling-rate: 38.12
+iter: 15000	top-1: 0.08	fooling-rate: 38.03
+iter: 16000	top-1: 0.09	fooling-rate: 38.06
+iter: 17000	top-1: 0.09	fooling-rate: 37.93
+iter: 18000	top-1: 0.09	fooling-rate: 37.83
+iter: 19000	top-1: 0.09	fooling-rate: 37.77
+iter: 20000	top-1: 0.10	fooling-rate: 37.88
+iter: 21000	top-1: 0.10	fooling-rate: 37.81
+iter: 22000	top-1: 0.10	fooling-rate: 37.77
+iter: 23000	top-1: 0.10	fooling-rate: 37.77
+iter: 24000	top-1: 0.10	fooling-rate: 37.84
+iter: 25000	top-1: 0.10	fooling-rate: 37.90
+iter: 26000	top-1: 0.10	fooling-rate: 37.95
+iter: 27000	top-1: 0.10	fooling-rate: 38.03
+iter: 28000	top-1: 0.09	fooling-rate: 38.14
+iter: 29000	top-1: 0.10	fooling-rate: 38.11
+iter: 30000	top-1: 0.09	fooling-rate: 38.14
+iter: 31000	top-1: 0.09	fooling-rate: 38.20
+iter: 32000	top-1: 0.09	fooling-rate: 38.17
+iter: 33000	top-1: 0.09	fooling-rate: 38.26
+iter: 34000	top-1: 0.09	fooling-rate: 38.26
+iter: 35000	top-1: 0.09	fooling-rate: 38.25
+iter: 36000	top-1: 0.09	fooling-rate: 38.27
+iter: 37000	top-1: 0.09	fooling-rate: 38.26
+iter: 38000	top-1: 0.10	fooling-rate: 38.25
+iter: 39000	top-1: 0.09	fooling-rate: 38.24
+iter: 40000	top-1: 0.10	fooling-rate: 38.26
+iter: 41000	top-1: 0.10	fooling-rate: 38.29
+iter: 42000	top-1: 0.10	fooling-rate: 38.25
+iter: 43000	top-1: 0.10	fooling-rate: 38.28
+iter: 44000	top-1: 0.10	fooling-rate: 38.32
+iter: 45000	top-1: 0.10	fooling-rate: 38.34
+iter: 46000	top-1: 0.10	fooling-rate: 38.35
+iter: 47000	top-1: 0.10	fooling-rate: 38.37
+iter: 48000	top-1: 0.10	fooling-rate: 38.31
+iter: 49000	top-1: 0.10	fooling-rate: 38.32
+Top-1 Accuracy = 0.10
+Fooling Rate = 38.33
+WARNING:tensorflow:From evaluate.py:58: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:67: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:67: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:72: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-14 10:20:42.593476: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-14 10:20:42.622869: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-14 10:20:42.624525: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f849182a60 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-14 10:20:42.624572: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-14 10:20:42.626431: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-14 10:20:42.820821: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 0 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:19:00.0
+2021-05-14 10:20:42.821527: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1618] Found device 1 with properties: 
+name: GeForce RTX 2080 Ti major: 7 minor: 5 memoryClockRate(GHz): 1.65
+pciBusID: 0000:1a:00.0
+2021-05-14 10:20:42.821762: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 10:20:42.822587: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 10:20:42.823488: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcufft.so.10.0
+2021-05-14 10:20:42.823756: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcurand.so.10.0
+2021-05-14 10:20:42.824648: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusolver.so.10.0
+2021-05-14 10:20:42.825492: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcusparse.so.10.0
+2021-05-14 10:20:42.827833: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 10:20:42.830217: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1746] Adding visible gpu devices: 0, 1
+2021-05-14 10:20:42.830300: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudart.so.10.0
+2021-05-14 10:20:42.832039: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1159] Device interconnect StreamExecutor with strength 1 edge matrix:
+2021-05-14 10:20:42.832067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1165]      0 1 
+2021-05-14 10:20:42.832072: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 0:   N N 
+2021-05-14 10:20:42.832075: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1178] 1:   N N 
+2021-05-14 10:20:42.834286: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:0 with 2424 MB memory) -> physical GPU (device: 0, name: GeForce RTX 2080 Ti, pci bus id: 0000:19:00.0, compute capability: 7.5)
+2021-05-14 10:20:42.836067: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1304] Created TensorFlow device (/job:localhost/replica:0/task:0/device:GPU:1 with 9867 MB memory) -> physical GPU (device: 1, name: GeForce RTX 2080 Ti, pci bus id: 0000:1a:00.0, compute capability: 7.5)
+2021-05-14 10:20:42.837913: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55f85497b850 initialized for platform CUDA (this does not guarantee that XLA will be used). Devices:
+2021-05-14 10:20:42.837928: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): GeForce RTX 2080 Ti, Compute Capability 7.5
+2021-05-14 10:20:42.837931: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (1): GeForce RTX 2080 Ti, Compute Capability 7.5
+WARNING:tensorflow:From evaluate.py:73: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+2021-05-14 10:20:59.202417: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcublas.so.10.0
+2021-05-14 10:20:59.479064: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcudnn.so.7
+2021-05-14 10:21:00.766100: W tensorflow/stream_executor/cuda/redzone_allocator.cc:312] Not found: ./bin/ptxas not found
+Relying on driver to perform ptx compilation. This message will be only logged once.
+2021-05-14 10:21:00.830625: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.830656: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.10GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.855124: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 898.56MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.855157: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 898.56MiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.861373: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.05GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.861401: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.05GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.893160: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.08GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.893193: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 2.08GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.939663: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+2021-05-14 10:21:00.939698: W tensorflow/core/common_runtime/bfc_allocator.cc:239] Allocator (GPU_0_bfc) ran out of memory trying to allocate 1.06GiB with freed_by_count=0. The caller indicates that this is not a failure, but may mean that there could be performance gains if more memory were available.
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.00	fooling-rate: 37.00
+iter:  2000	top-1: 0.10	fooling-rate: 36.65
+iter:  3000	top-1: 0.07	fooling-rate: 36.33
+iter:  4000	top-1: 0.05	fooling-rate: 36.65
+iter:  5000	top-1: 0.04	fooling-rate: 37.14
+iter:  6000	top-1: 0.05	fooling-rate: 37.60
+iter:  7000	top-1: 0.09	fooling-rate: 38.00
+iter:  8000	top-1: 0.07	fooling-rate: 37.80
+iter:  9000	top-1: 0.07	fooling-rate: 37.83
+iter: 10000	top-1: 0.08	fooling-rate: 37.65
+iter: 11000	top-1: 0.08	fooling-rate: 37.65
+iter: 12000	top-1: 0.07	fooling-rate: 37.72
+iter: 13000	top-1: 0.07	fooling-rate: 37.89
+iter: 14000	top-1: 0.06	fooling-rate: 38.17
+iter: 15000	top-1: 0.07	fooling-rate: 38.13
+iter: 16000	top-1: 0.07	fooling-rate: 38.14
+iter: 17000	top-1: 0.08	fooling-rate: 38.09
+iter: 18000	top-1: 0.09	fooling-rate: 38.01
+iter: 19000	top-1: 0.09	fooling-rate: 38.02
+iter: 20000	top-1: 0.10	fooling-rate: 38.02
+iter: 21000	top-1: 0.10	fooling-rate: 38.03
+iter: 22000	top-1: 0.10	fooling-rate: 38.05
+iter: 23000	top-1: 0.10	fooling-rate: 38.12
+iter: 24000	top-1: 0.10	fooling-rate: 38.06
+iter: 25000	top-1: 0.10	fooling-rate: 38.08
+iter: 26000	top-1: 0.10	fooling-rate: 38.21
+iter: 27000	top-1: 0.10	fooling-rate: 38.20
+iter: 28000	top-1: 0.10	fooling-rate: 38.27
+iter: 29000	top-1: 0.10	fooling-rate: 38.33
+iter: 30000	top-1: 0.10	fooling-rate: 38.40
+iter: 31000	top-1: 0.09	fooling-rate: 38.43
+iter: 32000	top-1: 0.09	fooling-rate: 38.32
+iter: 33000	top-1: 0.09	fooling-rate: 38.42
+iter: 34000	top-1: 0.09	fooling-rate: 38.40
+iter: 35000	top-1: 0.09	fooling-rate: 38.37
+iter: 36000	top-1: 0.09	fooling-rate: 38.38
+iter: 37000	top-1: 0.09	fooling-rate: 38.29
+iter: 38000	top-1: 0.09	fooling-rate: 38.25
+iter: 39000	top-1: 0.09	fooling-rate: 38.28
+iter: 40000	top-1: 0.10	fooling-rate: 38.31
+iter: 41000	top-1: 0.10	fooling-rate: 38.38
+iter: 42000	top-1: 0.10	fooling-rate: 38.35
+iter: 43000	top-1: 0.10	fooling-rate: 38.39
+iter: 44000	top-1: 0.10	fooling-rate: 38.40
+iter: 45000	top-1: 0.10	fooling-rate: 38.40
+iter: 46000	top-1: 0.10	fooling-rate: 38.45
+iter: 47000	top-1: 0.10	fooling-rate: 38.45
+iter: 48000	top-1: 0.10	fooling-rate: 38.41
+iter: 49000	top-1: 0.10	fooling-rate: 38.41
+Top-1 Accuracy = 0.10
+Fooling Rate = 38.38

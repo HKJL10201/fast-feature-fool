@@ -1,0 +1,80 @@
+nohup: ignoring input
+WARNING:tensorflow:From evaluate.py:55: The name tf.placeholder is deprecated. Please use tf.compat.v1.placeholder instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/misc/layers.py:28: The name tf.nn.max_pool is deprecated. Please use tf.nn.max_pool2d instead.
+
+WARNING:tensorflow:From /data/ltj/LTJ/fast-feature-fool/nets/vgg_19.py:46: calling dropout (from tensorflow.python.ops.nn_ops) with keep_prob is deprecated and will be removed in a future version.
+Instructions for updating:
+Please use `rate` instead of `keep_prob`. Rate should be set to `rate = 1 - keep_prob`.
+WARNING:tensorflow:From evaluate.py:64: The name tf.ConfigProto is deprecated. Please use tf.compat.v1.ConfigProto instead.
+
+WARNING:tensorflow:From evaluate.py:64: The name tf.GPUOptions is deprecated. Please use tf.compat.v1.GPUOptions instead.
+
+WARNING:tensorflow:From evaluate.py:69: The name tf.Session is deprecated. Please use tf.compat.v1.Session instead.
+
+2021-05-13 05:09:22.517489: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: SSE4.1 SSE4.2 AVX AVX2 AVX512F FMA
+2021-05-13 05:09:22.546939: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 3499910000 Hz
+2021-05-13 05:09:22.548760: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x55df7fabcd70 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2021-05-13 05:09:22.548817: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2021-05-13 05:09:22.550281: I tensorflow/stream_executor/platform/default/dso_loader.cc:44] Successfully opened dynamic library libcuda.so.1
+2021-05-13 05:09:22.561468: E tensorflow/stream_executor/cuda/cuda_driver.cc:318] failed call to cuInit: CUDA_ERROR_SYSTEM_DRIVER_MISMATCH: system has unsupported display driver / cuda driver combination
+2021-05-13 05:09:22.561512: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:169] retrieving CUDA diagnostic information for host: 2c3669a2e615
+2021-05-13 05:09:22.561526: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:176] hostname: 2c3669a2e615
+2021-05-13 05:09:22.561664: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:200] libcuda reported version is: 460.39.0
+2021-05-13 05:09:22.561698: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:204] kernel reported version is: 430.50.0
+2021-05-13 05:09:22.561710: E tensorflow/stream_executor/cuda/cuda_diagnostics.cc:313] kernel version 430.50.0 does not match DSO version 460.39.0 -- cannot find working devices in this configuration
+WARNING:tensorflow:From evaluate.py:70: The name tf.global_variables_initializer is deprecated. Please use tf.compat.v1.global_variables_initializer instead.
+
+/root/anaconda3/envs/tfone/lib/python3.6/site-packages/PIL/TiffImagePlugin.py:793: UserWarning: Corrupt EXIF data.  Expecting to read 4 bytes but only got 0. 
+  warnings.warn(str(msg))
+iter:  1000	top-1: 0.20	fooling-rate: 40.20
+iter:  2000	top-1: 0.10	fooling-rate: 40.30
+iter:  3000	top-1: 0.10	fooling-rate: 40.87
+iter:  4000	top-1: 0.10	fooling-rate: 40.62
+iter:  5000	top-1: 0.14	fooling-rate: 40.54
+iter:  6000	top-1: 0.12	fooling-rate: 40.70
+iter:  7000	top-1: 0.11	fooling-rate: 40.99
+iter:  8000	top-1: 0.11	fooling-rate: 40.85
+iter:  9000	top-1: 0.12	fooling-rate: 40.74
+iter: 10000	top-1: 0.11	fooling-rate: 40.79
+iter: 11000	top-1: 0.10	fooling-rate: 40.74
+iter: 12000	top-1: 0.09	fooling-rate: 40.77
+iter: 13000	top-1: 0.09	fooling-rate: 40.95
+iter: 14000	top-1: 0.09	fooling-rate: 41.28
+iter: 15000	top-1: 0.09	fooling-rate: 41.47
+iter: 16000	top-1: 0.08	fooling-rate: 41.49
+iter: 17000	top-1: 0.09	fooling-rate: 41.47
+iter: 18000	top-1: 0.09	fooling-rate: 41.45
+iter: 19000	top-1: 0.09	fooling-rate: 41.44
+iter: 20000	top-1: 0.09	fooling-rate: 41.50
+iter: 21000	top-1: 0.09	fooling-rate: 41.48
+iter: 22000	top-1: 0.09	fooling-rate: 41.40
+iter: 23000	top-1: 0.09	fooling-rate: 41.44
+iter: 24000	top-1: 0.09	fooling-rate: 41.55
+iter: 25000	top-1: 0.09	fooling-rate: 41.56
+iter: 26000	top-1: 0.09	fooling-rate: 41.65
+iter: 27000	top-1: 0.09	fooling-rate: 41.64
+iter: 28000	top-1: 0.10	fooling-rate: 41.69
+iter: 29000	top-1: 0.10	fooling-rate: 41.70
+iter: 30000	top-1: 0.11	fooling-rate: 41.76
+iter: 31000	top-1: 0.11	fooling-rate: 41.74
+iter: 32000	top-1: 0.11	fooling-rate: 41.59
+iter: 33000	top-1: 0.10	fooling-rate: 41.67
+iter: 34000	top-1: 0.10	fooling-rate: 41.65
+iter: 35000	top-1: 0.10	fooling-rate: 41.67
+iter: 36000	top-1: 0.11	fooling-rate: 41.61
+iter: 37000	top-1: 0.11	fooling-rate: 41.55
+iter: 38000	top-1: 0.11	fooling-rate: 41.56
+iter: 39000	top-1: 0.11	fooling-rate: 41.54
+iter: 40000	top-1: 0.10	fooling-rate: 41.56
+iter: 41000	top-1: 0.10	fooling-rate: 41.58
+iter: 42000	top-1: 0.11	fooling-rate: 41.51
+iter: 43000	top-1: 0.11	fooling-rate: 41.52
+iter: 44000	top-1: 0.11	fooling-rate: 41.49
+iter: 45000	top-1: 0.11	fooling-rate: 41.51
+iter: 46000	top-1: 0.11	fooling-rate: 41.54
+iter: 47000	top-1: 0.10	fooling-rate: 41.54
+iter: 48000	top-1: 0.11	fooling-rate: 41.52
+iter: 49000	top-1: 0.11	fooling-rate: 41.51
+Top-1 Accuracy = 0.11
+Fooling Rate = 41.48
